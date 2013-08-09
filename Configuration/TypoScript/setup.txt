@@ -1,6 +1,6 @@
 page.includeCSS {
-  jh_magnificpopup10 = {$plugin.tx_jhmagnificpopup.inclideMagnificpopupCss}
-  jh_magnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.inclideMagnificpopupCss}
+  jh_magnificpopup10 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
+  jh_magnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
 }
 
 page.includeJSFooterlibs {
@@ -8,8 +8,8 @@ page.includeJSFooterlibs {
   jh_magnificpopup10.forceOnTop = 1
   jh_magnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includejquerycore}
 
-  jh_magnificpopup20 = EXT:jh_magnificpopup/Resources/Public/js/jquery.magnific-popup.min.js
-  jh_magnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.inclideMagnificpopupJs}
+  jh_magnificpopup20 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
+  jh_magnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
 }
 
 plugin.jh_magnificpopup {
