@@ -1,0 +1,33 @@
+# cat=plugin.jh_magnificpopup/enable/010; type=boolean; label=Include jQuery
+plugin.tx_jhmagnificpopup.includejquerycore = 0
+
+
+#customsubcategory=magnificpopup=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup
+
+# cat=plugin.jh_magnificpopup/magnificpopup/110; type=boolean; label=Enable gallery
+plugin.tx_jhmagnificpopup.magnificpopup.gallery.enabled = 1
+
+# cat=plugin.jh_magnificpopup/magnificpopup/120; type=int+; label=Preload x images before actual
+plugin.tx_jhmagnificpopup.magnificpopup.gallery.preload.before = 1
+
+# cat=plugin.jh_magnificpopup/magnificpopup/130; type=int+; label=Preload x images after actual
+plugin.tx_jhmagnificpopup.magnificpopup.gallery.preload.after = 2
+
+# cat=plugin.jh_magnificpopup/magnificpopup/140; type=boolean; label=Enable 'navigate by image click'
+plugin.tx_jhmagnificpopup.magnificpopup.gallery.navigateByImgClick = 1
+
+# cat=plugin.jh_magnificpopup/magnificpopup/210; type=string; label=Set to 'null' to disable zoom out cursor.
+plugin.tx_jhmagnificpopup.magnificpopup.image.cursor = mfp-zoom-out-cur
+
+# cat=plugin.jh_magnificpopup/magnificpopup/220; type=int+; label=Vertical gap
+plugin.tx_jhmagnificpopup.magnificpopup.image.verticalGap = 88
+
+# cat=plugin.jh_magnificpopup/magnificpopup/230; type=boolean; label=Fit image in area vertically
+plugin.tx_jhmagnificpopup.magnificpopup.image.verticalFit = 1
+
+
+# cat=plugin.jh_magnificpopup/magnificpopup/910; type=string; label=Path to Magnific Popup javascript (empty to include no javascript)
+plugin.tx_jhmagnificpopup.inclideMagnificpopupJs = EXT:jh_magnificpopup/Resources/Public/js/jquery.magnific-popup.min.js
+
+# cat=plugin.jh_magnificpopup/magnificpopup/920; type=string; label=Path to Magnific Popup css (empty to include no css)
+plugin.tx_jhmagnificpopup.inclideMagnificpopupCss = EXT:jh_magnificpopup/Resources/Public/css/magnific-popup.css
