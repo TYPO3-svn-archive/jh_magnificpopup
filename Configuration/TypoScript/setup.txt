@@ -12,10 +12,12 @@ page.includeJSFooterlibs {
   jh_magnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
 }
 
+# Copy actual page.jsFooterInline to setup to prevent from data-loss
+plugin.jh_magnificpopup.setup < page.jsFooterInline
 plugin.jh_magnificpopup {
 	setup {
-		10 = COA
-		10 {
+		109 = COA
+		109 {
 			wrap = jQuery(document).ready(function($) {|});
 			10 = COA
 			10 {
