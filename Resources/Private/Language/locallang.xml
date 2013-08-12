@@ -6,7 +6,8 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="constants.subcat.magnificpopup">Magnific-Popup</label>
+			<label index="constants.subcat.magnificpopup.support">Enable Support</label>
+			<label index="constants.subcat.magnificpopup.setup">Magnific Popup</label>
 
 			<label index="tClose">Close (Esc)</label>
 			<label index="tLoading">Loading image #%curr%...</label>
@@ -16,7 +17,8 @@
 			<label index="tError"><![CDATA[<a href="%url%">The image</a> could not be loaded.]]></label>
 		</languageKey>
 		<languageKey index="de" type="array">
-			<label index="constants.subcat.magnificpopup">Magnific-Popup</label>
+			<label index="constants.subcat.magnificpopup.support">Support aktivieren</label>
+			<label index="constants.subcat.magnificpopup.setup">Magnific Popup</label>
 
 			<label index="tClose">Schließen (Esc)</label>
 			<label index="tLoading">Lade Bild #%curr%...</label>
