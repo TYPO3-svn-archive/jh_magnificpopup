@@ -1,8 +1,23 @@
 # cat=plugin.jh_magnificpopup/enable/010; type=boolean; label=Include jQuery
 plugin.tx_jhmagnificpopup.includejquerycore = 0
 
-
 #customsubcategory=magnificpopup=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup
+
+# cat=plugin.jh_magnificpopup/magnificpopup/010; type=boolean; label=Enable support for EXT news
+plugin.tx_jhmagnificpopup.magnificpopup.support.tx_news = 0
+
+# cat=plugin.jh_magnificpopup/magnificpopup/020; type=boolean; label=Enable support for EXT tt_news single-view
+plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.single = 0
+
+# cat=plugin.jh_magnificpopup/magnificpopup/020; type=boolean; label=Enable support for EXT tt_news list-view
+plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.list = 0
+
+# cat=plugin.jh_magnificpopup/magnificpopup/020; type=boolean; label=Enable support for EXT tt_news latest-view
+plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.latest = 0
+
+# cat=plugin.jh_magnificpopup/magnificpopup/099; type=string; label=jQuery selector for user-defined classes
+plugin.tx_jhmagnificpopup.magnificpopup.support.user =
+
 
 # cat=plugin.jh_magnificpopup/magnificpopup/110; type=boolean; label=Enable gallery
 plugin.tx_jhmagnificpopup.magnificpopup.gallery.enabled = 1

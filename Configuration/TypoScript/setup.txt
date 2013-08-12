@@ -1,8 +1,10 @@
+# Add css files to page
 page.includeCSS {
   jh_magnificpopup10 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
   jh_magnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
 }
 
+# Add JavaScript files to page
 page.includeJSFooterlibs {
   jh_magnificpopup10 = EXT:jh_magnificpopup/Resources/Public/js/jquery-1.10.2.min.js
   jh_magnificpopup10.forceOnTop = 1
@@ -12,21 +14,62 @@ page.includeJSFooterlibs {
   jh_magnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
 }
 
-# Copy actual page.jsFooterInline to setup to prevent from data-loss
-plugin.jh_magnificpopup.setup < page.jsFooterInline
+# Config tx_news if support is set
+[globalVar = LIT:1 = {$plugin.tx_jhmagnificpopup.magnificpopup.support.tx_news}]
+	plugin.tx_news.settings.detail.media.image {
+		lightbox = magnificpopup
+	}
+[global]
+
+
 plugin.jh_magnificpopup {
+	settings {
+		magnificpopup {
+			# Add some selectors if support is activated
+			selector = COA
+			selector {
+				# tx_news
+				10 = TEXT
+				10.value = ,.mediaelement-image
+				10.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.support.tx_news}
+				# tx_ttnews - single-view
+				20 = TEXT
+				20.value = ,.news-single-item
+				20.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.single}
+				# tx_ttnews - list-view
+				21 = TEXT
+				21.value = ,.news-list-container
+				21.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.list}
+				# tx_ttnews - single-view
+				22 = TEXT
+				22.value = ,.news-latest-container
+				22.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.latest}
+				# user-defined selectors (always start with ','!)
+				999 = TEXT
+				999.value = {$plugin.tx_jhmagnificpopup.magnificpopup.support.user}
+				999.insertData = 1
+			}
+		}
+	}
+	# Copy actual page.jsFooterInline to setup to prevent from data-loss
+	setup < page.jsFooterInline
 	setup {
 		109 = COA
 		109 {
 			wrap = jQuery(document).ready(function($) {|});
 			10 = COA
 			10 {
-				wrap = $('.csc-textpic').each(function() {|});
+				#wrap = $('.csc-textpic').each(function() {|});
+				10 = COA
+				10 {
+					wrap = $('.csc-textpic-imagewrap|').each(function() {
+					10 < plugin.jh_magnificpopup.settings.magnificpopup.selector
+				}
 				20 = COA
 				20 {
 					wrap = $(this).magnificPopup({|});
 					10 = TEXT
-					10.value = delegate: '.magnificpopup',
+					10.value = delegate: 'a',
 					20 = TEXT
 					20.value = tClose: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:tClose}',
 					20.insertData = 1
@@ -74,6 +117,8 @@ plugin.jh_magnificpopup {
 						40.insertData = 1
 					}
 				}
+				30 = TEXT
+				30.value = });
 			}
 		}
 	}
