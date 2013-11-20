@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin 'tx_jhmagnificpopup'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!-- Constant Editor -->
+			<label index="constants.subcat.magnificpopup.general">General</label>
+			<label index="constants.subcat.magnificpopup.imagesupport">Enable Support for images of extensions</label>
+			<label index="constants.subcat.magnificpopup.imagesetup">Magnific Popup - image</label>
+			<label index="constants.subcat.magnificpopup.type.iframe">Magnific Popup - iframe</label>
+			<label index="constants.subcat.magnificpopup.type.inline">Magnific Popup - inline</label>
+			<label index="constants.subcat.magnificpopup.type.ajax">Magnific Popup - ajax</label>
+
+			<!-- languagle-labels of Magnific Popup - image -->
+			<label index="tClose">Close (Esc)</label>
+			<label index="tLoading">Loading image #%curr%...</label>
+			<label index="tPrev">Previous (Left arrow key)</label>
+			<label index="tNext">Next (Right arrow key)</label>
+			<label index="tCounter">%curr% of %total%</label>
+			<label index="tError"><![CDATA[<a href="%url%">The image</a> could not be loaded.]]></label>
+
+			<!-- languagle-labels of Magnific Popup - iframe -->
+			<label index="iframe.tClose">Close (Esc)</label>
+			<label index="iframe.tLoading">Loading...</label>
+			<!-- languagle-labels of Magnific Popup - inline -->
+			<label index="inline.tClose">Close (Esc)</label>
+			<label index="inline.tLoading">Loading...</label>
+			<!-- languagle-labels of Magnific Popup - ajax -->
+			<label index="ajax.tClose">Close (Esc)</label>
+			<label index="ajax.tLoading">Loading...</label>
+			<label index="ajax.ajax.tError"><![CDATA[<a href="%url%">The content</a> could not be loaded.]]></label>
+
+			<!-- frontend plugin -->
+			<label index="pi1_title">Magnific Popup</label>
+			<label index="pi1_plus_wiz_description">Open a link or content with Magnific Popup</label>
+
+			<label index="pi_flexform.sheetOptions">General settings</label>
+			<label index="pi_flexform.sheetOptions.contenttype">Display type</label>
+
+			<label index="pi_flexform.sheetOptions.contenttype.iframe">Link</label>
+			<label index="pi_flexform.sheetOptions.contenttype.content.inline">Inline-Content</label>
+			<label index="pi_flexform.sheetOptions.contenttype.content.reference">Content-Reference</label>
+
+			<label index="pi_flexform.sheetOptions.content.procedure">Method</label>
+			<label index="pi_flexform.sheetOptions.content.procedure.ajax">Ajax</label>
+			<label index="pi_flexform.sheetOptions.content.procedure.inline">Inline</label>
+
+			<label index="pi_flexform.sheetOptions.content.inlinecontent">Inline Content</label>
+			<label index="pi_flexform.sheetOptions.content.contentreference">Content reference</label>
+			<label index="pi_flexform.sheetOptions.content.page">Inline Content</label>
+
+			<label index="pi_flexform.sheetOptions.mfpOption.text">Link text</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.link">Link target</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.mainClass">mainClass</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.mainClass_local">mainClass value</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.focus">focus</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.closeBtnInside">closeBtnInside</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.modal">modal</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.alignTop">alignTop</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.overflowY">overflowY</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.removalDelay">removalDelay</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.removalDelay_value">removalDelay value</label>
+
+			<label index="pi_flexform.sheetOptions.select">Select...</label>
+			<label index="pi_flexform.sheetOptions.typoscript">Defined by TypoScript</label>
+			<label index="pi_flexform.sheetOptions.local">Define local</label>
+			<label index="pi_flexform.sheetOptions.false">False</label>
+			<label index="pi_flexform.sheetOptions.true">True</label>
+			<label index="pi_flexform.sheetOptions.cssValue.visible">Visible</label>
+			<label index="pi_flexform.sheetOptions.cssValue.hidden">Hidden</label>
+			<label index="pi_flexform.sheetOptions.cssValue.scroll">Scroll</label>
+			<label index="pi_flexform.sheetOptions.cssValue.auto">Auto</label>
+			<label index="pi_flexform.sheetOptions.cssValue.inherit">Inherit</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<!-- Constant Editor -->
+			<label index="constants.subcat.magnificpopup.general">Allgemein</label>
+			<label index="constants.subcat.magnificpopup.imagesupport">Support aktivieren für Bilder von Extensions</label>
+			<label index="constants.subcat.magnificpopup.imagesetup">Magnific Popup - image</label>
+			<label index="constants.subcat.magnificpopup.type.iframe">Magnific Popup - iframe</label>
+			<label index="constants.subcat.magnificpopup.type.inline">Magnific Popup - inline</label>
+			<label index="constants.subcat.magnificpopup.type.ajax">Magnific Popup - ajax</label>
+
+			<!-- languagle-labels of Magnific Popup - image -->
+			<label index="tClose">Schließen (Esc)</label>
+			<label index="tLoading">Lade Bild #%curr%...</label>
+			<label index="tPrev">Vorheriges (Linke Pfeiltaste)</label>
+			<label index="tNext">Nächstes (Rechte Pfeiltaste)</label>
+			<label index="tCounter">%curr% von %total%</label>
+			<label index="tError"><![CDATA[<a href="%url%">Das Bild</a> konnte nicht geladen werden.]]></label>
+
+			<!-- languagle-labels of Magnific Popup - iframe -->
+			<label index="iframe.tClose">Schließen (Esc)</label>
+			<label index="iframe.tLoading">Laden...</label>
+			<!-- languagle-labels of Magnific Popup - inline -->
+			<label index="inline.tClose">Schließen (Esc)</label>
+			<label index="inline.tLoading">Laden...</label>
+			<!-- languagle-labels of Magnific Popup - ajax -->
+			<label index="ajax.tClose">Schließen (Esc)</label>
+			<label index="ajax.tLoading">Laden...</label>
+			<label index="ajax.ajax.tError"><![CDATA[<a href="%url%">Der Inhalt</a> konnte nicht geladen werden.]]></label>
+
+			<!-- frontend plugin -->
+			<label index="pi1_title">Magnific Popup</label>
+			<label index="pi1_plus_wiz_description">Öffnen eines Links oder Inhalts mit Magnific Popup</label>
+
+			<label index="pi_flexform.sheetOptions">Allgemeine Einstellungen</label>
+			<label index="pi_flexform.sheetOptions.contenttype">Anzeige-Typ</label>
+
+			<label index="pi_flexform.sheetOptions.contenttype.iframe">Link</label>
+			<label index="pi_flexform.sheetOptions.contenttype.content.inline">Inline-Content</label>
+			<label index="pi_flexform.sheetOptions.contenttype.content.reference">Content-Reference</label>
+
+			<label index="pi_flexform.sheetOptions.content.procedure">Methode</label>
+			<label index="pi_flexform.sheetOptions.content.procedure.ajax">Ajax</label>
+			<label index="pi_flexform.sheetOptions.content.procedure.inline">Inline</label>
+
+			<label index="pi_flexform.sheetOptions.content.inlinecontent">Inline Content</label>
+			<label index="pi_flexform.sheetOptions.content.contentreference">Content reference</label>
+			<label index="pi_flexform.sheetOptions.content.page">Inline Content</label>
+
+			<label index="pi_flexform.sheetOptions.mfpOption.text">Link-Text</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.link">Link-Ziel</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.mainClass">mainClass</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.mainClass_local">mainClass value</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.focus">focus</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.closeBtnInside">closeBtnInside</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.modal">modal</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.alignTop">alignTop</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.overflowY">overflowY</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.removalDelay">removalDelay</label>
+			<label index="pi_flexform.sheetOptions.mfpOption.removalDelay_value">removalDelay value</label>
+
+			<label index="pi_flexform.sheetOptions.select">Auswählen...</label>
+			<label index="pi_flexform.sheetOptions.typoscript">Definiert durch TypoScript</label>
+			<label index="pi_flexform.sheetOptions.local">Local definieren</label>
+			<label index="pi_flexform.sheetOptions.false">Falsch</label>
+			<label index="pi_flexform.sheetOptions.true">Wahr</label>
+			<label index="pi_flexform.sheetOptions.cssValue.visible">Visible</label>
+			<label index="pi_flexform.sheetOptions.cssValue.hidden">Hidden</label>
+			<label index="pi_flexform.sheetOptions.cssValue.scroll">Scroll</label>
+			<label index="pi_flexform.sheetOptions.cssValue.auto">Auto</label>
+			<label index="pi_flexform.sheetOptions.cssValue.inherit">Inherit</label>
+		</languageKey>
+	</data>
+</T3locallang>
