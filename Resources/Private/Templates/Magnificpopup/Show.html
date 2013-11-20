@@ -1,0 +1,15 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:flashMessages />
+
+{javascript -> f:format.raw()}
+<a class="{link-class}" href="{link}">{link-text}</a>
+<f:if condition="{inlinecontent}">
+	<div id="{inlinecontent_id}" class="white-popup-block mfp-hide">
+		{inlinecontent -> f:format.raw()}
+	</div>
+</f:if>
+
+</f:section>

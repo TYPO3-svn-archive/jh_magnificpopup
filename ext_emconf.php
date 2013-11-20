@@ -12,10 +12,10 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Magnific Popup',
-	'description' => 'Open images with the responsive Magnific Popup jQuery lightbox plugin.',
+	'description' => 'Open images with the responsive Magnific Popup jQuery lightbox plugin. BETA: Use Magnific Popup as Plugin and open every content as overlay in a lightbox.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '0.1.1',
+	'version' => '0.2.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,7 +34,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '4.5.0-6.1.99',
+			'typo3' => '6.0.0-6.1.99',
 		),
 		'conflicts' => array(
 		),

@@ -1,17 +1,22 @@
+//
+// Setup for image-lightbox
+//
+
 # Add css files to page
 page.includeCSS {
-  jh_magnificpopup10 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
-  jh_magnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
+  tx_jhmagnificpopup10 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
+  tx_jhmagnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
 }
 
 # Add JavaScript files to page
-page.includeJSFooterlibs {
-  jh_magnificpopup10 = EXT:jh_magnificpopup/Resources/Public/js/jquery-1.10.2.min.js
-  jh_magnificpopup10.forceOnTop = 1
-  jh_magnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includejquerycore}
+#page.includeJSFooterlibs {
+page.includeJS {
+  tx_jhmagnificpopup10 = EXT:jh_magnificpopup/Resources/Public/js/jquery-1.10.2.min.js
+  tx_jhmagnificpopup10.forceOnTop = 1
+  tx_jhmagnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includejquerycore}
 
-  jh_magnificpopup20 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
-  jh_magnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
+  tx_jhmagnificpopup20 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
+  tx_jhmagnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
 }
 
 # Config tx_news if support is set
@@ -22,7 +27,7 @@ page.includeJSFooterlibs {
 [global]
 
 
-plugin.jh_magnificpopup {
+plugin.tx_jhmagnificpopup {
 	settings {
 		magnificpopup {
 			# Add some selectors if support is activated
@@ -64,7 +69,7 @@ plugin.jh_magnificpopup {
 				10 = COA
 				10 {
 					wrap = $('.csc-textpic-imagewrap|').each(function() {
-					10 < plugin.jh_magnificpopup.settings.magnificpopup.selector
+					10 < plugin.tx_jhmagnificpopup.settings.magnificpopup.selector
 				}
 				20 = COA
 				20 {
@@ -126,7 +131,7 @@ plugin.jh_magnificpopup {
 }
 
 //add javascript to footer
-page.jsFooterInline < plugin.jh_magnificpopup.setup
+page.jsFooterInline < plugin.tx_jhmagnificpopup.setup
 
 // enable lightbox, add the right class and remove the unused rel-attriubute
 styles.content.imgtext.linkWrap {
