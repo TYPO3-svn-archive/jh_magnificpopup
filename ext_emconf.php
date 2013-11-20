@@ -12,10 +12,10 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Magnific Popup',
-	'description' => 'Open images, iframes and content with the responsive Magnific Popup jQuery lightbox plugin.',
+	'description' => 'Open images with the responsive Magnific Popup jQuery lightbox plugin. BETA: Use Magnific Popup as Plugin and open every content as overlay in a lightbox.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '1.0.0',
+	'version' => '0.2.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
