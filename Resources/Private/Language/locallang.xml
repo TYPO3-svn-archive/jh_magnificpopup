@@ -74,6 +74,11 @@
 			<label index="pi_flexform.sheetOptions.cssValue.scroll">Scroll</label>
 			<label index="pi_flexform.sheetOptions.cssValue.auto">Auto</label>
 			<label index="pi_flexform.sheetOptions.cssValue.inherit">Inherit</label>
+
+			<!-- Page TSconfig -->
+			<label index="pageTSconfig.externalLinkInMagnificpopup">Open link in Magnific Popup</label>
+			<label index="pageTSconfig.internalLinkInMagnificpopup">Open page in Magnific Popup</label>
+			<label index="pageTSconfig.downloadInMagnificpopup">Open file in Magnific Popup</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<!-- Constant Editor -->
@@ -144,6 +149,11 @@
 			<label index="pi_flexform.sheetOptions.cssValue.scroll">Scroll</label>
 			<label index="pi_flexform.sheetOptions.cssValue.auto">Auto</label>
 			<label index="pi_flexform.sheetOptions.cssValue.inherit">Inherit</label>
+
+			<!-- Page TSconfig -->
+			<label index="pageTSconfig.externalLinkInMagnificpopup">Link in Magnific Popup öffnen</label>
+			<label index="pageTSconfig.internalLinkInMagnificpopup">Seite in Magnific Popup öffnen</label>
+			<label index="pageTSconfig.downloadInMagnificpopup">Datei in Magnific Popup öffnen</label>
 		</languageKey>
 	</data>
 </T3locallang>
