@@ -78,29 +78,29 @@ class MagnificpopupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
 					}
 				}
 				// Render javascript
-				$javascript = "
+				$javascript = '
 jQuery(document).ready(function($) {
-	$('.mfp-iframe-".$this->data['uid']."').magnificPopup({
-		type: 'iframe',
-		tClose: '".LocalizationUtility::translate('iframe.tClose', $this->extkey)."',
-		tLoading: '".LocalizationUtility::translate('iframe.tLoading', $this->extkey)."',
-		disableOn: ".$this->settings['type']['iframe']['disableOn'].",
-		mainClass: '".$this->settings['type']['iframe']['mainClass']."',
-		preloader: ".$this->settings['type']['iframe']['preloader'].",
-		closeOnContentClick: ".$this->settings['type']['iframe']['closeOnContentClick'].",
-		closeOnBgClick: ".$this->settings['type']['iframe']['closeOnBgClick'].",
-		closeBtnInside: ".$this->settings['type']['iframe']['closeBtnInside'].",
-		showCloseBtn: ".$this->settings['type']['iframe']['showCloseBtn'].",
-		enableEscapeKey: ".$this->settings['type']['iframe']['enableEscapeKey'].",
-		modal: ".$this->settings['type']['iframe']['modal'].",
-		alignTop: ".$this->settings['type']['iframe']['alignTop'].",
-		fixedContentPos: '".$this->settings['type']['iframe']['fixedContentPos']."',
-		fixedBgPos: '".$this->settings['type']['iframe']['fixedBgPos']."',
-		overflowY: '".$this->settings['type']['iframe']['overflowY']."',
-		removalDelay: ".$this->settings['type']['iframe']['removalDelay'].",
-		closeMarkup: '".$this->settings['type']['iframe']['closeMarkup']."',
+	$(\'.mfp-iframe-'.$this->data['uid'].'\').magnificPopup({
+		type: \'iframe\',
+		tClose: \''.LocalizationUtility::translate('iframe.tClose', $this->extkey).'\',
+		tLoading: \''.LocalizationUtility::translate('iframe.tLoading', $this->extkey).'\',
+		disableOn: '.$this->settings['type']['iframe']['disableOn'].',
+		mainClass: \''.$this->settings['type']['iframe']['mainClass'].'\',
+		preloader: '.$this->settings['type']['iframe']['preloader'].',
+		closeOnContentClick: '.$this->settings['type']['iframe']['closeOnContentClick'].',
+		closeOnBgClick: '.$this->settings['type']['iframe']['closeOnBgClick'].',
+		closeBtnInside: '.$this->settings['type']['iframe']['closeBtnInside'].',
+		showCloseBtn: '.$this->settings['type']['iframe']['showCloseBtn'].',
+		enableEscapeKey: '.$this->settings['type']['iframe']['enableEscapeKey'].',
+		modal: '.$this->settings['type']['iframe']['modal'].',
+		alignTop: '.$this->settings['type']['iframe']['alignTop'].',
+		fixedContentPos: \''.$this->settings['type']['iframe']['fixedContentPos'].'\',
+		fixedBgPos: \''.$this->settings['type']['iframe']['fixedBgPos'].'\',
+		overflowY: \''.$this->settings['type']['iframe']['overflowY'].'\',
+		removalDelay: '.$this->settings['type']['iframe']['removalDelay'].',
+		closeMarkup: \''.$this->settings['type']['iframe']['closeMarkup'].'\',
 	});
-});";
+});';
 				// Wrap javascript
 				$viewAssign['javascript'] = '<script type="text/javascript">'.trim($javascript).'</script>';
 				break;
@@ -108,7 +108,7 @@ jQuery(document).ready(function($) {
 			case 'inline':
 				$viewAssign['uid'] = $this->data['uid'];
 
-				if(($this->settings['content']['procedure_reference'] == 'ajax'  && !empty($this->settings['contenttype'])) || $this->settings['content']['procedure_inline'] == 'ajax') {
+				if (($this->settings['content']['procedure_reference'] == 'ajax' && !empty($this->settings['contenttype'])) || $this->settings['content']['procedure_inline'] == 'ajax') {
 					// Use ajax procedure
 					$viewAssign['link-class'] = 'mfp-ajax-'.$this->data['uid'];
 					if($this->settings['contenttype'] == 'reference') {
@@ -148,34 +148,34 @@ jQuery(document).ready(function($) {
 						}
 					}
 					// Render javascript
-					$javascript = "
+					$javascript = '
 jQuery(document).ready(function($) {
-	$('.mfp-ajax-".$this->data['uid']."').magnificPopup({
-		type: 'ajax',
-		tClose: '".LocalizationUtility::translate('ajax.tClose', $this->extkey)."',
-		tLoading: '".LocalizationUtility::translate('ajax.tLoading', $this->extkey)."',
+	$(\'.mfp-ajax-'.$this->data['uid'].'\').magnificPopup({
+		type: \'ajax\',
+		tClose: \''.LocalizationUtility::translate('ajax.tClose', $this->extkey).'\',
+		tLoading: \''.LocalizationUtility::translate('ajax.tLoading', $this->extkey).'\',
 		ajax: {
-			cursor: '".$this->settings['type']['ajax']['ajax']['cursor']."',
-			tError: '".LocalizationUtility::translate('ajax.ajax.tError', $this->extkey)."'
+			cursor: \''.$this->settings['type']['ajax']['ajax']['cursor'].'\',
+			tError: \''.LocalizationUtility::translate('ajax.ajax.tError', $this->extkey).'\'
 		},
-		disableOn: ".$this->settings['type']['ajax']['disableOn'].",
-		mainClass: '".$this->settings['type']['ajax']['mainClass']."',
-		preloader: ".$this->settings['type']['ajax']['preloader'].",
-		focus: '".$this->settings['type']['ajax']['focus']."',
-		closeOnContentClick: ".$this->settings['type']['ajax']['closeOnContentClick'].",
-		closeOnBgClick: ".$this->settings['type']['ajax']['closeOnBgClick'].",
-		closeBtnInside: ".$this->settings['type']['ajax']['closeBtnInside']."0,
-		showCloseBtn: ".$this->settings['type']['ajax']['showCloseBtn'].",
-		enableEscapeKey: ".$this->settings['type']['ajax']['enableEscapeKey'].",
-		modal: ".$this->settings['type']['ajax']['modal'].",
-		alignTop: ".$this->settings['type']['ajax']['alignTop'].",
-		fixedContentPos: '".$this->settings['type']['ajax']['fixedContentPos']."',
-		fixedBgPos: '".$this->settings['type']['ajax']['fixedBgPos']."',
-		overflowY: '".$this->settings['type']['ajax']['overflowY']."',
-		removalDelay: ".$this->settings['type']['ajax']['removalDelay'].",
-		closeMarkup: '".$this->settings['type']['ajax']['closeMarkup']."',
+		disableOn: '.$this->settings['type']['ajax']['disableOn'].',
+		mainClass: \''.$this->settings['type']['ajax']['mainClass'].'\',
+		preloader: '.$this->settings['type']['ajax']['preloader'].',
+		focus: \''.$this->settings['type']['ajax']['focus'].'\',
+		closeOnContentClick: '.$this->settings['type']['ajax']['closeOnContentClick'].',
+		closeOnBgClick: '.$this->settings['type']['ajax']['closeOnBgClick'].',
+		closeBtnInside: '.$this->settings['type']['ajax']['closeBtnInside'].',
+		showCloseBtn: '.$this->settings['type']['ajax']['showCloseBtn'].',
+		enableEscapeKey: '.$this->settings['type']['ajax']['enableEscapeKey'].',
+		modal: '.$this->settings['type']['ajax']['modal'].',
+		alignTop: '.$this->settings['type']['ajax']['alignTop'].',
+		fixedContentPos: \''.$this->settings['type']['ajax']['fixedContentPos'].'\',
+		fixedBgPos: \''.$this->settings['type']['ajax']['fixedBgPos'].'\',
+		overflowY: \''.$this->settings['type']['ajax']['overflowY'].'\',
+		removalDelay: '.$this->settings['type']['ajax']['removalDelay'].',
+		closeMarkup: \''.$this->settings['type']['ajax']['closeMarkup'].'\',
 	});
-});";
+});';
 					// Wrap javascript
 					$viewAssign['javascript'] = '<script type="text/javascript">'.trim($javascript).'</script>';
 				} else if (($this->settings['content']['procedure_reference'] && !empty($this->settings['contenttype'])) == 'inline' || $this->settings['content']['procedure_inline'] == 'inline'){
@@ -231,43 +231,43 @@ jQuery(document).ready(function($) {
 						}
 					}
 					// Render javascript
-					$javascript = "
+					$javascript = '
 jQuery(document).ready(function($) {
-	$('.mfp-inline-".$this->data['uid']."').magnificPopup({
-		type: 'inline',
-		tClose: '".LocalizationUtility::translate('inline.tClose', $this->extkey)."',
-		tLoading: '".LocalizationUtility::translate('inline.tLoading', $this->extkey)."',
-		disableOn: ".$this->settings['type']['inline']['disableOn'].",
-		mainClass: '".$this->settings['type']['inline']['mainClass']."',
-		preloader: ".$this->settings['type']['inline']['preloader'].",
-		focus: '".$this->settings['type']['inline']['focus']."',
-		closeOnContentClick: ".$this->settings['type']['inline']['closeOnContentClick'].",
-		closeOnBgClick: ".$this->settings['type']['inline']['closeOnBgClick'].",
-		closeBtnInside: ".$this->settings['type']['inline']['closeBtnInside']."0,
-		showCloseBtn: ".$this->settings['type']['inline']['showCloseBtn'].",
-		enableEscapeKey: ".$this->settings['type']['inline']['enableEscapeKey'].",
-		modal: ".$this->settings['type']['inline']['modal'].",
-		alignTop: ".$this->settings['type']['inline']['alignTop'].",
-		fixedContentPos: '".$this->settings['type']['inline']['fixedContentPos']."',
-		fixedBgPos: '".$this->settings['type']['inline']['fixedBgPos']."',
-		overflowY: '".$this->settings['type']['inline']['overflowY']."',
-		removalDelay: ".$this->settings['type']['inline']['removalDelay'].",
-		closeMarkup: '".$this->settings['type']['inline']['closeMarkup']."',
+	$(\'.mfp-inline-'.$this->data['uid'].'\').magnificPopup({
+		type: \'inline\',
+		tClose: \''.LocalizationUtility::translate('inline.tClose', $this->extkey).'\',
+		tLoading: \''.LocalizationUtility::translate('inline.tLoading', $this->extkey).'\',
+		disableOn: '.$this->settings['type']['inline']['disableOn'].',
+		mainClass: \''.$this->settings['type']['inline']['mainClass'].'\',
+		preloader: '.$this->settings['type']['inline']['preloader'].',
+		focus: \''.$this->settings['type']['inline']['focus'].'\',
+		closeOnContentClick: '.$this->settings['type']['inline']['closeOnContentClick'].',
+		closeOnBgClick: '.$this->settings['type']['inline']['closeOnBgClick'].',
+		closeBtnInside: '.$this->settings['type']['inline']['closeBtnInside'].',
+		showCloseBtn: '.$this->settings['type']['inline']['showCloseBtn'].',
+		enableEscapeKey: '.$this->settings['type']['inline']['enableEscapeKey'].',
+		modal: '.$this->settings['type']['inline']['modal'].',
+		alignTop: '.$this->settings['type']['inline']['alignTop'].',
+		fixedContentPos: \''.$this->settings['type']['inline']['fixedContentPos'].'\',
+		fixedBgPos: \''.$this->settings['type']['inline']['fixedBgPos'].'\',
+		overflowY: \''.$this->settings['type']['inline']['overflowY'].'\',
+		removalDelay: '.$this->settings['type']['inline']['removalDelay'].',
+		closeMarkup: \''.$this->settings['type']['inline']['closeMarkup'].'\',
 	});
-});";
+});';
 				// Wrap javascript
 				$viewAssign['javascript'] = '<script type="text/javascript">'.trim($javascript).'</script>';
 				} else if ($this->settings['content']['procedure_reference'] == '' && $this->settings['content']['procedure_inline'] == '') {
 					// Add error if no method (inline or ajax) has been selected
-					$this->flashMessageContainer->add('Please select the method (inline or ajax) to display Magnific Popup content','Select method', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+					$this->flashMessageContainer->add('Please select the method (inline or ajax) to display Magnific Popup content', 'Select method', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
 				} else if ($this->settings['content']['procedure_reference'] != '' && empty($this->settings['contenttype'])) {
 					// Add error if no content has been selected
-					$this->flashMessageContainer->add('Please select a content to display with Magnific Popup','Select content', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+					$this->flashMessageContainer->add('Please select a content to display with Magnific Popup', 'Select content', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
 				}
 				break;
 			default:
 				// Add error if no "Display type" has been selected
-				$this->flashMessageContainer->add('Please select a "Display type" to use Magnific Popup','Select "Display type"', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+				$this->flashMessageContainer->add('Please select a "Display type" to use Magnific Popup', 'Select "Display type"', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
 		}
 
 		// Assign array to fluid-template

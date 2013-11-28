@@ -32,7 +32,7 @@ plugin.tx_jhmagnificpopup.settings {
 			focus = {$plugin.tx_jhmagnificpopup.type.inline.focus}
 			closeOnContentClick = {$plugin.tx_jhmagnificpopup.type.inline.closeOnContentClick}
 			closeOnBgClick = {$plugin.tx_jhmagnificpopup.type.inline.closeOnBgClick}
-			showBtnInside = {$plugin.tx_jhmagnificpopup.type.inline.showBtnInside}
+			closeBtnInside = {$plugin.tx_jhmagnificpopup.type.inline.closeBtnInside}
 			showCloseBtn = {$plugin.tx_jhmagnificpopup.type.inline.showCloseBtn}
 			enableEscapeKey = {$plugin.tx_jhmagnificpopup.type.inline.enableEscapeKey}
 			modal = {$plugin.tx_jhmagnificpopup.type.inline.modal}
@@ -52,7 +52,7 @@ plugin.tx_jhmagnificpopup.settings {
 			focus = {$plugin.tx_jhmagnificpopup.type.ajax.focus}
 			closeOnContentClick = {$plugin.tx_jhmagnificpopup.type.ajax.closeOnContentClick}
 			closeOnBgClick = {$plugin.tx_jhmagnificpopup.type.ajax.closeOnBgClick}
-			showBtnInside = {$plugin.tx_jhmagnificpopup.type.ajax.showBtnInside}
+			closeBtnInside = {$plugin.tx_jhmagnificpopup.type.ajax.closeBtnInside}
 			showCloseBtn = {$plugin.tx_jhmagnificpopup.type.ajax.showCloseBtn}
 			enableEscapeKey = {$plugin.tx_jhmagnificpopup.type.ajax.enableEscapeKey}
 			modal = {$plugin.tx_jhmagnificpopup.type.ajax.modal}
