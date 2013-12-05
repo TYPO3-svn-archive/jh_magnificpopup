@@ -17,6 +17,9 @@ page.includeJS {
 
   tx_jhmagnificpopup20 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
   tx_jhmagnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
+
+  tx_jhmagnificpopup25 = {$plugin.tx_jhmagnificpopup.includeIsImageFileJs}
+  tx_jhmagnificpopup25.if.isTrue = {$plugin.tx_jhmagnificpopup.includeIsImageFileJs}
 }
 
 # Config tx_news if support is set
@@ -75,7 +78,7 @@ plugin.tx_jhmagnificpopup {
 				20 {
 					wrap = $(this).magnificPopup({|});
 					10 = TEXT
-					10.value = delegate: 'a',
+					10.value = delegate: 'a:isImageFile',
 					20 = TEXT
 					20.value = tClose: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:tClose}',
 					20.insertData = 1
