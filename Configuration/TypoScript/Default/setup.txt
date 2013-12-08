@@ -18,8 +18,8 @@ page.includeJS {
   tx_jhmagnificpopup20 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
   tx_jhmagnificpopup20.if.isTrue = {$plugin.tx_jhmagnificpopup.includeMagnificpopupJs}
 
-  tx_jhmagnificpopup25 = {$plugin.tx_jhmagnificpopup.includeIsImageFileJs}
-  tx_jhmagnificpopup25.if.isTrue = {$plugin.tx_jhmagnificpopup.includeIsImageFileJs}
+  tx_jhmagnificpopup25 = {$plugin.tx_jhmagnificpopup.includeFilterIsImageFileJs}
+  tx_jhmagnificpopup25.if.isTrue = {$plugin.tx_jhmagnificpopup.includeFilterIsImageFileJs}
 }
 
 # Config tx_news if support is set

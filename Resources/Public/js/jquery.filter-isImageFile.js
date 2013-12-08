@@ -1,3 +1,6 @@
+/*! jQuery :isImageFile filter - v0.0.1 - 2013-12-08
+*
+* Copyright (c) 2013 Jonathan Heilmann; */
 jQuery.noConflict();
 (function($) {
 	$.extend($.expr[':'], {
