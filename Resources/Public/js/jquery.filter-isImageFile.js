@@ -1,6 +1,12 @@
-/*! jQuery :isImageFile filter - v0.0.1 - 2013-12-08
+/*! jQuery :isImageFile filter - v0.0.2 - 2014-02-23
 *
-* Copyright (c) 2013 Jonathan Heilmann; */
+* Copyright (c) 2013-2014 Jonathan Heilmann;
+*
+* CHANGELOG
+* 0.0.2:	-added jpeg to filter
+* 0.0.1:	-initial release
+*
+*/
 jQuery.noConflict();
 (function($) {
 	$.extend($.expr[':'], {
@@ -11,6 +17,7 @@ jQuery.noConflict();
 			file.toLowerCase();	// Convert to lower case
 			var extension = file.substr((file.lastIndexOf('.')+1)); // Get extension of file
 			switch(extension) {
+				case 'jpeg':
 				case 'jpg':
 				case 'png':
 				case 'gif':
