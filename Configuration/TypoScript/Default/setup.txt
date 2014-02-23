@@ -38,7 +38,7 @@ plugin.tx_jhmagnificpopup {
 			selector {
 				# tx_news
 				10 = TEXT
-				10.value = ,.mediaelement-image
+				10.value = ,.news-img-wrap
 				10.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.support.tx_news}
 				# tx_ttnews - single-view
 				20 = TEXT
