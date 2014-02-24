@@ -1,0 +1,134 @@
+
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. ==================================================
+.. DEFINE SOME TEXTROLES
+.. --------------------------------------------------
+.. role::   underline
+.. role::   typoscript(code)
+.. role::   ts(typoscript)
+   :class:  typoscript
+.. role::   php(code)
+
+
+ChangeLog
+---------
+
+.. ### BEGIN~OF~TABLE ###
+
+.. t3-field-list-table::
+ :header-rows: 1
+
+ - :Version:
+         Version
+
+   :Changes:
+         Changes
+
+ - :Version:
+         0.2.4
+
+   :Changes:
+         \* Added jpeg to image-filter
+
+         \* Fixed task #55368
+
+         \* Updated manual to ReST
+
+ - :Version:
+         0.2.3
+
+   :Changes:
+         \* Updated manual
+
+         \* Added support-advice for TYPO3 CMS < 6.0
+
+ - :Version:
+         0.2.2
+
+   :Changes:
+         \* Added Extension Configuration in manual
+
+         \* Fixed some violations (
+         `https://metrics.typo3.org/dashboard/index/org.typo3:extension-
+         jh\_magnificpopup <https://metrics.typo3.org/dashboard/index/org.typo3
+         :extension-jh_magnificpopup>`_ )
+
+         \* Fixed a bug that broke the closeBtnInside of inline and ajax
+         elements
+
+         \* Added Magnific Popup to RTE
+
+         \* Fixed bug #51300
+
+ - :Version:
+         0.2.1
+
+   :Changes:
+         \* Same as 0.2.0, but with dependencies
+
+ - :Version:
+         0.2.0
+
+   :Changes:
+         \* Added Plugin – still BETA
+
+         \* Updated Magnific Popup to version 0.9.9
+
+         \* Introduced some breaking changes, please see manual for more
+         information.
+
+         \* Dropped Support for TYPO3 CMS 4.5
+
+         \* Updated manual
+
+ - :Version:
+         0.1.2
+
+   :Changes:
+         \* Fixed Bug #51300 for TYPO3 CMS 4.5-4.7
+
+         \* Updated Magnific Popup to version 0.9.9
+
+ - :Version:
+         0.1.1
+
+   :Changes:
+         \* Fixed Bug #51081: Installation causes a Fatal error and crashed the
+         TYPO3 installation (4.5.x)
+
+ - :Version:
+         0.1.0
+
+   :Changes:
+         \* Added support for EXT:news and EXT:tt\_news
+
+         \* Updated manual
+
+ - :Version:
+         0.0.2
+
+   :Changes:
+         \* Added Extension-Icon
+
+         \* Changes in constants: mistake in writing of
+         “includeMagnificpopupJs” and “includeMagnificpopupCss” (please control
+         your constants when updating)
+
+         \* Updated manual
+
+ - :Version:
+         0.0.1
+
+   :Changes:
+         \* Initial release
+
+
+.. ###### END~OF~TABLE ######
+
+.. figure:: ../../Images/typo3.png
+
+
