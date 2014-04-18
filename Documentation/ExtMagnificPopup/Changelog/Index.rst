@@ -29,6 +29,14 @@ ChangeLog
          Changes
 
  - :Version:
+         0.2.5
+
+   :Changes:
+         \* Magnific Popup as content-element is now stable (now problems known)
+
+         \* Updated dependencies: works with TYPO3 CMS 6.2
+
+ - :Version:
          0.2.4
 
    :Changes:

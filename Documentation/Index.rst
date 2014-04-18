@@ -18,10 +18,10 @@ EXT: Magnific Popup
 ===================
 
 :Created:
-      2010-02-18 17:03:03
+      2010-02-18 17:03
 
 :Changed:
-      2014-02-23 19:03:05
+      2014-04-18 18:20
 
 :Classification:
       jh_magnificpopup
