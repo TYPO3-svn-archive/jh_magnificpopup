@@ -72,6 +72,7 @@ plugin.tx_jhmagnificpopup.settings.type.iframe {
 	# Copy actual page.jsFooterInline to setup to prevent from data-loss
 	setup < page.jsFooterInline
 	setup {
+		/*
 		110 = COA
 		110 {
 			wrap = jQuery(document).ready(function($) {|});
@@ -81,10 +82,10 @@ plugin.tx_jhmagnificpopup.settings.type.iframe {
 				10 = TEXT
 				10.value = type: 'iframe',
 				20 = TEXT
-				20.value = tClose: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:iframe.tClose}',
+				20.value = tClose: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:iframe.tClose}',
 				20.insertData = 1
 				30 = TEXT
-				30.value = tLoading: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:iframe.tLoading}',
+				30.value = tLoading: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:iframe.tLoading}',
 				30.insertData = 1
 				40 = TEXT
 				40.value = disableOn: {$plugin.tx_jhmagnificpopup.type.iframe.disableOn},
@@ -133,10 +134,15 @@ plugin.tx_jhmagnificpopup.settings.type.iframe {
 				180.insertData = 1
 			}
 		}
+		*/
+		110 = FLUIDTEMPLATE
+		110 {
+			file = EXT:jh_magnificpopup/Resources/Private/Templates/TypoScript/Inline.html
+		}
 	}
 }
 // Add javascript of iframe to footer
-page.jsFooterInline < plugin.tx_jhmagnificpopup.settings.type.iframe.setup
+ page.jsFooterInline < plugin.tx_jhmagnificpopup.settings.type.iframe.setup
 [global]
 
 // Definde page for ajax-requests

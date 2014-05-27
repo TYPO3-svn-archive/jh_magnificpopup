@@ -1,4 +1,13 @@
-#customsubcategory=magnificpopup_general=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup.general
+plugin.tx_jhmagnificpopup.view {
+	# cat=module.tx_jhmagnificpopup/file; type=string; label=Path to template root (BE)
+	templateRootPath = EXT:jh_magnificpopup/Resources/Private/Backend/Templates/
+	# cat=module.tx_jhmagnificpopup/file; type=string; label=Path to template partials (BE)
+	partialRootPath = EXT:jh_magnificpopup/Resources/Private/Backend/Partials/
+	# cat=module.tx_jhmagnificpopup/file; type=string; label=Path to template layouts (BE)
+	layoutRootPath = EXT:jh_magnificpopup/Resources/Private/Backend/Layouts/
+}
+
+#customsubcategory=magnificpopup_general=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:constants.subcat.magnificpopup.general
 
 # cat=plugin.jh_magnificpopup/magnificpopup_general/010; type=boolean; label=Include jQuery
 plugin.tx_jhmagnificpopup.includejquerycore = 0
@@ -11,7 +20,7 @@ plugin.tx_jhmagnificpopup.includeMagnificpopupCss = EXT:jh_magnificpopup/Resourc
 
 
 
-#customsubcategory=magnificpopup_imagesupport=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup.imagesupport
+#customsubcategory=magnificpopup_imagesupport=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:constants.subcat.magnificpopup.imagesupport
 
 # cat=plugin.jh_magnificpopup/magnificpopup_imagesupport/010; type=boolean; label=EXT news:Enable support for EXT:news
 plugin.tx_jhmagnificpopup.magnificpopup.support.tx_news = 0
@@ -30,7 +39,7 @@ plugin.tx_jhmagnificpopup.magnificpopup.support.user =
 
 
 
-#customsubcategory=magnificpopup_imagesetup=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup.imagesetup
+#customsubcategory=magnificpopup_imagesetup=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:constants.subcat.magnificpopup.imagesetup
 
 # cat=plugin.jh_magnificpopup/magnificpopup_imagesetup/110; type=boolean; label=Enable gallery: Enable gallery-view of Magnific Popup
 plugin.tx_jhmagnificpopup.magnificpopup.gallery.enabled = 1

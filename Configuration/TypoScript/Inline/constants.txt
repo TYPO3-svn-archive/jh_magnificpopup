@@ -1,4 +1,4 @@
-#customsubcategory=mfp_type_iframe=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup.type.iframe
+#customsubcategory=mfp_type_iframe=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:constants.subcat.magnificpopup.type.iframe
 # cat=plugin.jh_magnificpopup/mfp_type_iframe/010; type=boolean; label=Enable global: Enable iframe popup globally
 plugin.tx_jhmagnificpopup.type.iframe.enableglobal = 0
 
@@ -34,7 +34,7 @@ plugin.tx_jhmagnificpopup.type.iframe.removalDelay = 0
 plugin.tx_jhmagnificpopup.type.iframe.closeMarkup = <button title="%title%" class="mfp-close"><i class="mfp-close-icn">&times;</i></button>
 
 
-#customsubcategory=mfp_type_inline=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup.type.inline
+#customsubcategory=mfp_type_inline=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:constants.subcat.magnificpopup.type.inline
 # cat=plugin.jh_magnificpopup/mfp_type_inline/210; type=int+; label=disableOn
 plugin.tx_jhmagnificpopup.type.inline.disableOn = 0
 # cat=plugin.jh_magnificpopup/mfp_type_inline/220; type=sting; label=mainClass
@@ -69,7 +69,7 @@ plugin.tx_jhmagnificpopup.type.inline.removalDelay = 0
 plugin.tx_jhmagnificpopup.type.inline.closeMarkup = <button title="%title%" class="mfp-close"><i class="mfp-close-icn">&times;</i></button>
 
 
-#customsubcategory=mfp_type_ajax=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:constants.subcat.magnificpopup.type.ajax
+#customsubcategory=mfp_type_ajax=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:constants.subcat.magnificpopup.type.ajax
 # cat=plugin.jh_magnificpopup/mfp_type_ajax/010; type=boolean; label=Enable global: Enable ajax popup globally
 plugin.tx_jhmagnificpopup.type.ajax.enableglobal = 0
 
