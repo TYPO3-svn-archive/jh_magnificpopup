@@ -1,0 +1,23 @@
+
+;(function($) {
+	$('.mfp-link').magnificPopup({
+		type: 'iframe',
+		tClose: '<f:translate key="tClose" extensionName="JhMagnificpopup"></f:translate>',
+		tLoading: '<f:translate key="tLoading" extensionName="JhMagnificpopup"></f:translate>',
+		disableOn: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.disableOn" />',
+		mainClass: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.mainClass" />',
+		preloader: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.preloader" />',
+		closeOnContentClick: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.closeOnContentClick" />',
+		closeOnBgClick: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.closeOnBgClick" />',
+		closeBtnInside: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.closeBtnInside" />',
+		showCloseBtn: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.showCloseBtn" />',
+		enableEscapeKey: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.enableEscapeKey" />',
+		modal: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.modal" />',
+		alignTop: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.alignTop" />',
+		fixedContentPos: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.fixedContentPos" />',
+		fixedBgPos: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.fixedBgPos" />',
+		overflowY: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.overflowY" />',
+		removalDelay: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.removalDelay" />',
+		closeMarkup: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.type.iframe.closeMarkup" />'
+	});
+})(window.jQuery);
