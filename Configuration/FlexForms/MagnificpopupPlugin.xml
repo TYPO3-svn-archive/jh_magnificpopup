@@ -6,31 +6,31 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions</sheetTitle>
+					<sheetTitle>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<settings.contenttype>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.contenttype</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.contenttype</label>
 							<onChange>reload</onChange>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.select</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.select</numIndex>
 										<numIndex index="1"></numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.contenttype.iframe</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.contenttype.iframe</numIndex>
 										<numIndex index="1">iframe</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.contenttype.content.inline</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.contenttype.content.inline</numIndex>
 										<numIndex index="1">inline</numIndex>
 									</numIndex>
 									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.contenttype.content.reference</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.contenttype.content.reference</numIndex>
 										<numIndex index="1">reference</numIndex>
 									</numIndex>
 								</items>
@@ -40,7 +40,7 @@
 
 					<settings.mfpOption.text>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.text</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.text</label>
 							<config>
 								<type>input</type>
 								<size>20</size>
@@ -51,7 +51,7 @@
 					</settings.mfpOption.text>
 					<settings.mfpOption.href>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.link</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.link</label>
 							<displayCond>FIELD:settings.contenttype:=:iframe</displayCond>
 							<config>
 								<type>input</type>
@@ -64,21 +64,21 @@
 
 					<settings.content.procedure_inline>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.procedure</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.procedure</label>
 							<displayCond>FIELD:settings.contenttype:=:inline</displayCond>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.select</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.select</numIndex>
 										<numIndex index="1"></numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.procedure.ajax</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.procedure.ajax</numIndex>
 										<numIndex index="1">ajax</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.procedure.inline</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.procedure.inline</numIndex>
 										<numIndex index="1">inline</numIndex>
 									</numIndex>
 								</items>
@@ -87,7 +87,7 @@
 					</settings.content.procedure_inline>
 					<settings.content.inline>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.inline.content</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.inline.content</label>
 							<displayCond>FIELD:settings.contenttype:=:inline</displayCond>
 							<config>
 								<type>inline</type>
@@ -115,21 +115,21 @@
 
 					<settings.content.procedure_reference>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.procedure</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.procedure</label>
 							<displayCond>FIELD:settings.contenttype:=:reference</displayCond>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.select</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.select</numIndex>
 										<numIndex index="1"></numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.procedure.ajax</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.procedure.ajax</numIndex>
 										<numIndex index="1">ajax</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.procedure.inline</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.procedure.inline</numIndex>
 										<numIndex index="1">inline</numIndex>
 									</numIndex>
 								</items>
@@ -138,7 +138,7 @@
 					</settings.content.procedure_reference>
 					<settings.content.reference>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.content.inline.reference</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.content.inline.reference</label>
 							<displayCond>FIELD:settings.contenttype:=:reference</displayCond>
 							<config>
 								<type>group</type>
@@ -161,17 +161,17 @@
 
 					<settings.mfpOption.mainClass>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.mainClass</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.mainClass</label>
 							<onChange>reload</onChange>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.typoscript</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.typoscript</numIndex>
 										<numIndex index="1">-1</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.local</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.local</numIndex>
 										<numIndex index="1">local</numIndex>
 									</numIndex>
 								</items>
@@ -180,7 +180,7 @@
 					</settings.mfpOption.mainClass>
 					<settings.mfpOption.mainClass_local>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.mainClass_local</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.mainClass_local</label>
 							<displayCond>FIELD:settings.mfpOption.mainClass:=:local</displayCond>
 							<config>
 								<type>input</type>
@@ -192,7 +192,7 @@
 					</settings.mfpOption.mainClass_local>
 					<settings.mfpOption.focus>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.focus</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.focus</label>
 							<displayCond>FIELD:settings.contenttype:!=:iframe</displayCond>
 							<config>
 								<type>input</type>
@@ -204,20 +204,20 @@
 					</settings.mfpOption.focus>
 					<settings.mfpOption.closeBtnInside>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.closeBtnInside</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.closeBtnInside</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.typoscript</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.typoscript</numIndex>
 										<numIndex index="1">-1</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.false</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.false</numIndex>
 										<numIndex index="1">0</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.true</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.true</numIndex>
 										<numIndex index="1">1</numIndex>
 									</numIndex>
 								</items>
@@ -226,20 +226,20 @@
 					</settings.mfpOption.closeBtnInside>
 					<settings.mfpOption.modal>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.modal</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.modal</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.typoscript</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.typoscript</numIndex>
 										<numIndex index="1">-1</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.false</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.false</numIndex>
 										<numIndex index="1">0</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.true</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.true</numIndex>
 										<numIndex index="1">1</numIndex>
 									</numIndex>
 								</items>
@@ -248,20 +248,20 @@
 					</settings.mfpOption.modal>
 					<settings.mfpOption.alignTop>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.alignTop</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.alignTop</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.typoscript</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.typoscript</numIndex>
 										<numIndex index="1">-1</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.false</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.false</numIndex>
 										<numIndex index="1">0</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.true</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.true</numIndex>
 										<numIndex index="1">1</numIndex>
 									</numIndex>
 								</items>
@@ -270,32 +270,32 @@
 					</settings.mfpOption.alignTop>
 					<settings.mfpOption.overflowY>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.overflowY</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.overflowY</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.typoscript</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.typoscript</numIndex>
 										<numIndex index="1">-1</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.cssValue.visible</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.cssValue.visible</numIndex>
 										<numIndex index="1">visible</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.cssValue.hidden</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.cssValue.hidden</numIndex>
 										<numIndex index="1">hidden</numIndex>
 									</numIndex>
 									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.cssValue.scroll</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.cssValue.scroll</numIndex>
 										<numIndex index="1">scroll</numIndex>
 									</numIndex>
 									<numIndex index="4" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.cssValue.auto</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.cssValue.auto</numIndex>
 										<numIndex index="1">auto</numIndex>
 									</numIndex>
 									<numIndex index="5" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.cssValue.inherit</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.cssValue.inherit</numIndex>
 										<numIndex index="1">inherit</numIndex>
 									</numIndex>
 								</items>
@@ -304,17 +304,17 @@
 					</settings.mfpOption.overflowY>
 					<settings.mfpOption.removalDelay>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.removalDelay</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.removalDelay</label>
 							<onChange>reload</onChange>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.typoscript</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.typoscript</numIndex>
 										<numIndex index="1">-1</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.local</numIndex>
+										<numIndex index="0">LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.local</numIndex>
 										<numIndex index="1">local</numIndex>
 									</numIndex>
 								</items>
@@ -323,7 +323,7 @@
 					</settings.mfpOption.removalDelay>
 					<settings.mfpOption.removalDelay_local>
 						<TCEforms>
-							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pi_flexform.sheetOptions.mfpOption.removalDelay_value</label>
+							<label>LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:pi_flexform.sheetOptions.mfpOption.removalDelay_value</label>
 							<displayCond>FIELD:settings.mfpOption.removalDelay:=:local</displayCond>
 							<config>
 								<type>input</type>
