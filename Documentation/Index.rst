@@ -1,4 +1,3 @@
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
@@ -21,7 +20,7 @@ EXT: Magnific Popup
       2010-02-18 17:03
 
 :Changed:
-      2014-04-18 18:20
+      2014-06-04 18:44
 
 :Classification:
       jh_magnificpopup
@@ -41,8 +40,23 @@ EXT: Magnific Popup
 :Language:
       en
 
-.. figure:: Images/line.gif
-.. figure:: Images/typo3.png
+Extension Key: jh\_magnificpopup
+
+Language: en
+
+Version: 0.2.6
+
+Keywords: magnific popup, lightbox, responsive
+
+Copyright 2013-2014, Jonathan Heilmann, <mail@jonathan-heilmann.de>
+
+This document is published under the Open Content License
+
+available from http://www.opencontent.org/opl.shtml
+
+The content of this document is related to TYPO3
+
+\- a GNU/GPL CMS/Framework available from www.typo3.org
 
 
 .. toctree::
@@ -50,5 +64,13 @@ EXT: Magnific Popup
    :titlesonly:
    :glob:
 
-   ExtMagnificPopup/Index
+   Introduction/Index
+   UsersManual/Index
+   Administration/Index
+   ConfigurationOfExtension/Index
+   ConfigurationOfLightbox/Index
+   ConfigurationOfPlugin/Index
+   BreakingChanges/Index
+   KnownProblems/Index
+   Changelog/Index
 

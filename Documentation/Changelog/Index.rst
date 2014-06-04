@@ -1,4 +1,3 @@
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
@@ -27,6 +26,18 @@ ChangeLog
 
    :Changes:
          Changes
+
+ - :Version:
+         0.2.6
+
+   :Changes:
+         \* BREAKING CHANGES for global images and iframe
+
+         \* Moved translation to XLIFF
+
+         \* Added fully support for Zepto
+
+         \* Removed jQuery.noConflict for isImageFile-filter
 
  - :Version:
          0.2.5
@@ -136,7 +147,4 @@ ChangeLog
 
 
 .. ###### END~OF~TABLE ######
-
-.. figure:: ../../Images/typo3.png
-
 

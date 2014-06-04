@@ -13,11 +13,16 @@
 .. role::   php(code)
 
 
-Screenshot
-^^^^^^^^^^
+Breaking changes
+----------------
 
-.. figure:: ../../../Images/Introduction-Screenshot.png
 
-Magnific Popup gallery-view (Screenshot taken from `http://dimsemenov.com/plugins/magnific-popup/
-<http://dimsemenov.com/plugins/magnific-popup/>`_)
+.. toctree::
+   :maxdepth: 5
+   :titlesonly:
+   :glob:
+
+   Version026/Index
+   Version024/Index
+   Version020/Index
 

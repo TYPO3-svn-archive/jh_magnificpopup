@@ -13,14 +13,11 @@
 .. role::   php(code)
 
 
-Lightbox for images
-^^^^^^^^^^^^^^^^^^^
+Screenshot
+^^^^^^^^^^
 
-Create a content element “Images” or “Text & Images” as normal and set
-“Enlage on Click”.
+.. figure:: ../../Images/Introduction-Screenshot.png
 
-.. figure:: ../../../Images/UsersManual-LightboxForImages.png
-
-Using images in RTE with activated “Click to enlarge” is a second way
-to use Magnific Popup.
+Magnific Popup gallery-view (Screenshot taken from `http://dimsemenov.com/plugins/magnific-popup/
+<http://dimsemenov.com/plugins/magnific-popup/>`_)
 
