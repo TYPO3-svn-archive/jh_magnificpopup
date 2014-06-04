@@ -31,13 +31,15 @@ ChangeLog
          0.2.6
 
    :Changes:
-         \* BREAKING CHANGES for global images and iframe
+         \* BREAKING CHANGES for global images and iframe (see manual chapter "Breaking Changes" of documentation for more information)
 
          \* Moved translation to XLIFF
 
          \* Added fully support for Zepto
 
          \* Removed jQuery.noConflict for isImageFile-filter
+
+         \* Fixed a bug that broke inline-content
 
  - :Version:
          0.2.5

@@ -1,5 +1,3 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
@@ -20,7 +18,7 @@ Support for TYPO3 CMS < 6.0
 
 Since version 0.2.0 the TER-version of jh\_magnificpopup does not
 support TYPO3 CMS < 6.0. The last TER-version for TYPO3 CMS 4.5 - 4.7
-is 0.1.2.
+is 0.1.3.
 
 Bugfix-support is still available, but no new feature will be added.
 To check for a new version of jh\_magnificpopup for TYPO3 CMS < 6.0
