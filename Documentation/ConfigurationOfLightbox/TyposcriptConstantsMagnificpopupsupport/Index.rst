@@ -98,6 +98,22 @@ TypoScript Constants – magnificpopup.support
 .. container:: table-row
 
    Property
+         tx\_bootstrappackage
+
+   Data type
+         boolean
+
+   Description
+         Enable support for EXT:tt\_bootstrappackage.
+         Set to 0 if you want to use the default lightbox of EXT:bootstrap_package
+
+   Default
+         1
+
+
+.. container:: table-row
+
+   Property
          user
 
    Data type

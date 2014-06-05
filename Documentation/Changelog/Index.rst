@@ -41,6 +41,10 @@ ChangeLog
 
          \* Fixed a bug that broke inline-content
 
+         \* Added support for bootstrap_packages (used by "The official Introduction Package")
+
+         \* Moved javascript libraries to JSFooterlibs
+
  - :Version:
          0.2.5
 
