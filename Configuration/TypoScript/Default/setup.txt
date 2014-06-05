@@ -9,8 +9,8 @@ page.includeCSS {
 }
 
 # Add JavaScript files to page
-#page.includeJSFooterlibs {
-page.includeJS {
+page.includeJSFooterlibs {
+#page.includeJS {
   tx_jhmagnificpopup10 = EXT:jh_magnificpopup/Resources/Public/js/jquery-1.10.2.min.js
   tx_jhmagnificpopup10.forceOnTop = 1
   tx_jhmagnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includejquerycore}
@@ -51,6 +51,10 @@ plugin.tx_jhmagnificpopup {
 				22 = TEXT
 				22.value = ,.news-latest-container
 				22.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.latest}
+				# bootstrap_package
+				30 = TEXT
+				30.value = ,.image-wrap
+				30.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.support.bootstrap_package}
 				# user-defined selectors (always start with ','!)
 				999 = TEXT
 				999.value = ,{$plugin.tx_jhmagnificpopup.magnificpopup.support.user}
@@ -77,77 +81,6 @@ plugin.tx_jhmagnificpopup {
 	# Copy actual page.jsFooterInline to setup to prevent from data-loss
 	setup < page.jsFooterInline
 	setup {
-		#100 = COA
-		#100 < page.jsFooterInline
-/*
-		109 = COA
-		109 {
-			wrap = jQuery(document).ready(function($) {|});
-			10 = COA
-			10 {
-				#wrap = $('.csc-textpic').each(function() {|});
-				10 = COA
-				10 {
-					wrap = $('.csc-textpic-imagewrap|').each(function() {
-					10 < plugin.tx_jhmagnificpopup.settings.magnificpopup.selector
-				}
-				20 = COA
-				20 {
-					wrap = $(this).magnificPopup({|});
-					10 = TEXT
-					10.value = delegate: 'a:isImageFile',
-					20 = TEXT
-					20.value = tClose: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:tClose}',
-					20.insertData = 1
-					30 = TEXT
-					30.value = type: 'image',
-					40 = TEXT
-					40.value = tLoading: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:tLoading}',
-					40.insertData = 1
-					50 = TEXT
-					50.value = mainClass: 'mfp-img-mobile',
-					60 = COA
-					60 {
-						wrap = gallery: {|},
-						10 = TEXT
-						10.value = enabled: {$plugin.tx_jhmagnificpopup.magnificpopup.gallery.enabled},
-						20 = TEXT
-						20.value = preload: [{$plugin.tx_jhmagnificpopup.magnificpopup.gallery.preload.before},{$plugin.tx_jhmagnificpopup.magnificpopup.gallery.preload.after}],
-						30 = TEXT
-						30.value = navigateByImgClick: {$plugin.tx_jhmagnificpopup.magnificpopup.gallery.navigateByImgClick},
-						40 = TEXT
-						40.value = arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-						50 = TEXT
-						50.value = tPrev: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:tPrev}',
-						50.insertData = 1
-						60 = TEXT
-						60.value = tNext: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:tNext}',
-						60.insertData = 1
-						70 = TEXT
-						70.value = tCounter: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:tCounter}'
-						70.insertData = 1
-					}
-					70 = COA
-					70 {
-						wrap = image: {|}
-						10 = TEXT
-						10.value = cursor: '{$plugin.tx_jhmagnificpopup.magnificpopup.image.cursor}',
-						20 = TEXT
-						20.value = titleSrc: 'title',
-						30 = TEXT
-						30.value = verticalGap: {$plugin.tx_jhmagnificpopup.magnificpopup.image.verticalGap},
-						30 = TEXT
-						30.value = verticalFit: {$plugin.tx_jhmagnificpopup.magnificpopup.image.verticalFit},
-						40 = TEXT
-						40.value = tError: '{LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:tError}'
-						40.insertData = 1
-					}
-				}
-				30 = TEXT
-				30.value = });
-			}
-		}
-		*/
 		# add fluidtemplate
 		109 = FLUIDTEMPLATE
 		109 {
