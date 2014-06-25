@@ -28,6 +28,12 @@ ChangeLog
          Changes
 
  - :Version:
+         0.2.7
+
+   :Changes:
+         \* fixed bug #59696 (filter-isImageFile doesn't work with UpperCase Filetype)
+
+ - :Version:
          0.2.6
 
    :Changes:
