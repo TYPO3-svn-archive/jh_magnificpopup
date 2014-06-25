@@ -1,8 +1,9 @@
-/*! jQuery :isImageFile filter - v0.0.3 - 2014-05-27
+/*! jQuery :isImageFile filter - v0.0.3 - 2014-06-25
 *
 * Copyright (c) 2013-2014 Jonathan Heilmann;
 *
 * CHANGELOG
+* 0.0.4: -fixed bug #59696 (filter-isImageFile doesn't work with UpperCase Filetype)
 * 0.0.3:	-removed jQuery.noConflict() and added IIFE
 *			-added support for zepto
 * 0.0.2:	-added jpeg to filter
@@ -15,7 +16,7 @@
 			var $this = $(obj);
 			var file = $this.attr('href');
 			if(file == null) {return false;} // Return false if the path is empty
-			file.toLowerCase();	// Convert to lower case
+			file = file.toLowerCase();	// Convert to lower case
 			var extension = file.substr((file.lastIndexOf('.')+1)); // Get extension of file
 			switch(extension) {
 				case 'jpeg':
