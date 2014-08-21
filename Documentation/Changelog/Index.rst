@@ -28,6 +28,12 @@ ChangeLog
          Changes
 
  - :Version:
+         0.2.8
+
+   :Changes:
+         \* Ignore images with class "excludeFromMagnificpopup" in jQuery image filter
+
+ - :Version:
          0.2.7
 
    :Changes:
