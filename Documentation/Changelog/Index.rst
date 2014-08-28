@@ -35,6 +35,8 @@ ChangeLog
 
          \* Inline-Content did not work if jQuery has been included in footer
 
+         \* Fixed a bug in tceMain hook
+
  - :Version:
          0.2.7
 
