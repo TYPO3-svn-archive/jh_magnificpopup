@@ -79,7 +79,10 @@ class MagnificpopupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
 				}
 				// Render javascript
 				$javascript = '
-jQuery(document).ready(function($) {
+if (typeof mfpInlineFunctions == \'undefined\'){
+   window.mfpInlineFunctions = new Array();
+}
+mfpInlineFunctions.push(function($) {
 	$(\'.mfp-iframe-'.$this->data['uid'].'\').magnificPopup({
 		type: \'iframe\',
 		tClose: \''.LocalizationUtility::translate('iframe.tClose', $this->extkey).'\',

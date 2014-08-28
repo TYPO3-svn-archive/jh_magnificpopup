@@ -2,6 +2,10 @@
 // Setup for content-element
 //
 
+page.includeJSFooterlibs {
+	tx_jhmagnificpopup30 = EXT:jh_magnificpopup/Resources/Public/js/jquery.mfpInlineFunctions.min.js
+}
+
 plugin.tx_jhmagnificpopup.settings {
 	type {
 		// Set default settings for Magnific Popup type iframe

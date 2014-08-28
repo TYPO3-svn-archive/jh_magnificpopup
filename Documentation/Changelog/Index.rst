@@ -33,6 +33,8 @@ ChangeLog
    :Changes:
          \* Ignore images with class "excludeFromMagnificpopup" in jQuery image filter
 
+         \* Inline-Content did not work if jQuery has been included in footer
+
  - :Version:
          0.2.7
 
