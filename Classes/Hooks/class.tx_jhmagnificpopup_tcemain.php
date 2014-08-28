@@ -49,6 +49,9 @@ class tx_jhmagnificpopup_tcemain {
 		if ($incomingFieldArray['list_type'] != 'jhmagnificpopup_pi1') {
 			if (is_array($pObj->datamap['tt_content'])) {
 				foreach ($pObj->datamap['tt_content'] as $key => $val) {
+					if (!is_array($val['pi_flexform'])) {
+						$val['pi_flexform'] = \TYPO3\CMS\Core\Utility\GeneralUtility::xml2array($val['pi_flexform']);
+					}
 					if ($val['list_type'] == 'jhmagnificpopup_pi1' && $val['pi_flexform']['data']['sDEF']['lDEF']['settings.contenttype']['vDEF'] == 'inline') {
 						// Change the colPos of the IRRE tt_content values
 						$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['jh_magnificpopup']);
