@@ -152,7 +152,10 @@ mfpInlineFunctions.push(function($) {
 					}
 					// Render javascript
 					$javascript = '
-jQuery(document).ready(function($) {
+if (typeof mfpInlineFunctions == \'undefined\'){
+   window.mfpInlineFunctions = new Array();
+}
+mfpInlineFunctions.push(function($) {
 	$(\'.mfp-ajax-'.$this->data['uid'].'\').magnificPopup({
 		type: \'ajax\',
 		tClose: \''.LocalizationUtility::translate('ajax.tClose', $this->extkey).'\',
@@ -235,7 +238,10 @@ jQuery(document).ready(function($) {
 					}
 					// Render javascript
 					$javascript = '
-jQuery(document).ready(function($) {
+if (typeof mfpInlineFunctions == \'undefined\'){
+   window.mfpInlineFunctions = new Array();
+}
+mfpInlineFunctions.push(function($) {
 	$(\'.mfp-inline-'.$this->data['uid'].'\').magnificPopup({
 		type: \'inline\',
 		tClose: \''.LocalizationUtility::translate('inline.tClose', $this->extkey).'\',
