@@ -7,6 +7,7 @@ page.includeJSFooterlibs {
 }
 
 plugin.tx_jhmagnificpopup.settings {
+	useEidForAjaxMethod = {$plugin.tx_jhmagnificpopup.useEidForAjaxMethod}
 	type {
 		// Set default settings for Magnific Popup type iframe
 		iframe {
@@ -102,6 +103,44 @@ plugin.tx_jhmagnificpopup.settings {
 		closeMarkup = TEXT
 		closeMarkup.value = {$plugin.tx_jhmagnificpopup.type.iframe.closeMarkup}
 	}
+	templateVariablesAjax = COA
+	templateVariablesAjax {
+		ajax.cursor = TEXT
+		ajax.cursor.value = {$plugin.tx_jhmagnificpopup.type.ajax.ajax.cursor}
+		disableOn = TEXT
+		disableOn.value = {$plugin.tx_jhmagnificpopup.type.ajax.disableOn}
+		disableOn.value.intval = 1
+		mainClass = TEXT
+		mainClass.value = {$plugin.tx_jhmagnificpopup.type.ajax.mainClass}
+		preloader = TEXT
+		preloader.value = {$plugin.tx_jhmagnificpopup.type.ajax.preloader}
+		focus = TEXT
+		focus.value = {$plugin.tx_jhmagnificpopup.type.ajax.focus}
+		closeOnContentClick = TEXT
+		closeOnContentClick.value = {$plugin.tx_jhmagnificpopup.type.ajax.closeOnContentClick}
+		closeOnBgClick = TEXT
+		closeOnBgClick.value = {$plugin.tx_jhmagnificpopup.type.ajax.closeOnBgClick}
+		closeBtnInside = TEXT
+		closeBtnInside.value = {$plugin.tx_jhmagnificpopup.type.ajax.closeBtnInside}
+		showCloseBtn = TEXT
+		showCloseBtn.value = {$plugin.tx_jhmagnificpopup.type.ajax.showCloseBtn}
+		enableEscapeKey = TEXT
+		enableEscapeKey.value = {$plugin.tx_jhmagnificpopup.type.ajax.enableEscapeKey}
+		modal = TEXT
+		modal.value = {$plugin.tx_jhmagnificpopup.type.ajax.modal}
+		alignTop = TEXT
+		alignTop.value = {$plugin.tx_jhmagnificpopup.type.ajax.alignTop}
+		fixedContentPos = TEXT
+		fixedContentPos.value = {$plugin.tx_jhmagnificpopup.type.ajax.fixedContentPos}
+		fixedBgPos = TEXT
+		fixedBgPos.value = {$plugin.tx_jhmagnificpopup.type.ajax.fixedBgPos}
+		overflowY = TEXT
+		overflowY.value = {$plugin.tx_jhmagnificpopup.type.ajax.overflowY}
+		removalDelay = TEXT
+		removalDelay.value = {$plugin.tx_jhmagnificpopup.type.ajax.removalDelay}
+		closeMarkup = TEXT
+		closeMarkup.value = {$plugin.tx_jhmagnificpopup.type.ajax.closeMarkup}
+	}
 }
 
 // Include javascript of iframe if enabled global
@@ -118,6 +157,22 @@ plugin.tx_jhmagnificpopup.settings.type.iframe {
 }
 // Add javascript of iframe to footer
  page.jsFooterInline < plugin.tx_jhmagnificpopup.settings.type.iframe.setup
+[global]
+
+// Include javascript of ajax if enabled global
+[globalVar = LIT:1 = {$plugin.tx_jhmagnificpopup.type.ajax.enableglobal}]
+plugin.tx_jhmagnificpopup.settings.type.ajax {
+	# Copy actual page.jsFooterInline to setup to prevent from data-loss
+	setup < page.jsFooterInline
+	setup {
+		111 = FLUIDTEMPLATE
+		111 {
+			file = EXT:jh_magnificpopup/Resources/Private/Templates/TypoScript/InlineAjax.html
+		}
+	}
+}
+// Add javascript of ajax to footer
+ page.jsFooterInline < plugin.tx_jhmagnificpopup.settings.type.ajax.setup
 [global]
 
 // Definde page for ajax-requests

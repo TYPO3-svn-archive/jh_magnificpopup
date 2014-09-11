@@ -3,47 +3,37 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "jh_magnificpopup".
  *
- * Auto generated 09-08-2013 19:35
+ * Auto generated 08-09-2014 15:09
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = array (
 	'title' => 'Magnific Popup',
 	'description' => 'Open images with the responsive Magnific Popup jQuery lightbox plugin. And use Magnific Popup as content-element to open content in a lightbox.',
 	'category' => 'plugin',
-	'shy' => 0,
-	'version' => '0.2.8',
-	'dependencies' => '',
-	'conflicts' => '',
-	'priority' => '',
-	'loadOrder' => '',
-	'module' => '',
+	'version' => '0.3.0-beta1',
 	'state' => 'stable',
-	'uploadfolder' => 0,
+	'uploadfolder' => true,
 	'createDirs' => '',
-	'modify_tables' => '',
-	'clearcacheonload' => 1,
-	'lockType' => '',
+	'clearcacheonload' => true,
 	'author' => 'Jonathan Heilmann',
 	'author_email' => 'mail@jonathan-heilmann.de',
 	'author_company' => '',
-	'CGLcompliance' => '',
-	'CGLcompliance_note' => '',
-	'constraints' => array(
-		'depends' => array(
+	'constraints' =>
+	array (
+		'depends' =>
+		array (
 			'typo3' => '6.0.0-6.2.99',
 		),
-		'conflicts' => array(
+		'conflicts' =>
+		array (
 		),
-		'suggests' => array(
+		'suggests' =>
+		array (
 		),
 	),
-	'suggests' => array(
-	),
-	'_md5_values_when_last_written' => '',
 );
 
-?>

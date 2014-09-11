@@ -124,16 +124,22 @@ mfpInlineFunctions.push(function($) {
 						}
 						$pidInList = substr($pidInList, 0, -1);
 						// Configure the link
-						$linkconf = array(
-							'parameter' => $this->data['pid'],
-							'additionalParams' => '&type=109&jh_magnificpopup[type]=reference&jh_magnificpopup[uid]='.$this->settings['content']['reference'].'&jh_magnificpopup[pid]='.$pidInList
-						);
+						$linkconf = array();
+						$linkconf['parameter'] = $this->data['pid'];
+						if ($this->settings['useEidForAjaxMethod'] != 1) {
+							$linkconf['additionalParams'] = '&type=109&jh_magnificpopup[type]=reference&jh_magnificpopup[uid]='.$this->settings['content']['reference'].'&jh_magnificpopup[pid]='.$pidInList;
+						} else {
+							$linkconf['additionalParams'] = '&eID=jh_magnificpopup_ajax&jh_magnificpopup[type]=reference&jh_magnificpopup[uid]='.$this->settings['content']['reference'].'&jh_magnificpopup[pid]='.$pidInList;
+						}
 					} else {
 						// Configure the link
-						$linkconf = array(
-							'parameter' => $this->data['pid'],
-							'additionalParams' => '&type=109&jh_magnificpopup[type]=inline&jh_magnificpopup[irre_parrentid]='.$this->data['uid']
-						);
+						$linkconf = array();
+						$linkconf['parameter'] = $this->data['pid'];
+						if ($this->settings['useEidForAjaxMethod'] != 1) {
+							$linkconf['additionalParams'] = '&type=109&jh_magnificpopup[type]=inline&jh_magnificpopup[irre_parrentid]='.$this->data['uid'];
+						} else {
+							$linkconf['additionalParams'] = '&eID=jh_magnificpopup_ajax&jh_magnificpopup[type]=inline&jh_magnificpopup[irre_parrentid]='.$this->data['uid'];
+						}
 					}
 					// Link-setup
 					$viewAssign['link'] = $this->cObj->typolink_URL($linkconf);
