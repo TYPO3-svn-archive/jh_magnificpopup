@@ -20,7 +20,7 @@ EXT: Magnific Popup
       2010-02-18 17:03
 
 :Changed:
-      2014-06-04 18:44
+      2014-09-18 19:37
 
 :Classification:
       jh_magnificpopup
@@ -44,7 +44,7 @@ Extension Key: jh\_magnificpopup
 
 Language: en
 
-Version: 0.2.6
+Version: 0.3.0
 
 Keywords: magnific popup, lightbox, responsive
 
@@ -70,6 +70,7 @@ The content of this document is related to TYPO3
    ConfigurationOfExtension/Index
    ConfigurationOfLightbox/Index
    ConfigurationOfPlugin/Index
+   Development/Index
    BreakingChanges/Index
    KnownProblems/Index
    Changelog/Index

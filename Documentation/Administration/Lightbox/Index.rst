@@ -11,10 +11,14 @@
 .. role::   ts(typoscript)
    :class:  typoscript
 .. role::   php(code)
+.. highlight:: guess
 
 
-Lightbox for images
-^^^^^^^^^^^^^^^^^^^
+Lightbox
+^^^^^^^^
+
+For images
+""""""""""
 
 To use the lightbox, include static “Magnific Popup
 (jh\_magnificpopup)” to your template.
@@ -29,3 +33,18 @@ not matter.
 .. figure:: ../../Images/Administration-LightboxForImages.png
 
 Now you may customize your extension with the Constant Editor.
+
+
+For whole page
+""""""""""""""
+
+(Available since version 0.3.0)
+
+If you want to open all images of a page in one lightbox add the following TypoScript to your template-setup:
+
+
+.. code-block:: typoscript
+
+	page.jsFooterInline.109.variables.selector >
+	page.jsFooterInline.109.variables.selector = TEXT
+	page.jsFooterInline.109.variables.selector.value = body

@@ -1,5 +1,3 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
@@ -15,17 +13,11 @@
 .. role::   php(code)
 
 
-Administration
---------------
+Global Iframe
+^^^^^^^^^^^^^
 
+With the global iframe option enabled (plugin.tx_jhmagnificpopup.type.iframe.enableglobal), it's possible to open every link in a Magnific Popup lightbox.
 
-.. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
+To enable the lightbox for a link add class "mfp-link".
 
-   Lightbox/Index
-   Plugin/Index
-   IframeForRte/Index
-   GlobalIframe/Index
-   GlobalAjax/Index
+If you want to use iframe in RTE please see chapter "Administration -> Iframe for RTE"

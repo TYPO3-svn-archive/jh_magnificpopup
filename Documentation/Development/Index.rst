@@ -1,4 +1,4 @@
-﻿
+
 
 .. ==================================================
 .. FOR YOUR INFORMATION
@@ -15,8 +15,8 @@
 .. role::   php(code)
 
 
-Administration
---------------
+Development
+-----------
 
 
 .. toctree::
@@ -24,8 +24,4 @@ Administration
    :titlesonly:
    :glob:
 
-   Lightbox/Index
-   Plugin/Index
-   IframeForRte/Index
-   GlobalIframe/Index
-   GlobalAjax/Index
+   AjaxHook/Index

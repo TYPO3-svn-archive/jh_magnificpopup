@@ -38,16 +38,16 @@ TypoScript Constants – magnificpopup
 .. container:: table-row
 
    Property
-         support
+         includejquerycore
 
    Data type
-         array
+         boolean
 
    Description
-         Options to enable support of other Extensions
+         Activate to include jQuery
 
    Default
-         \
+         0
 
 .. container:: table-row
 
@@ -63,22 +63,7 @@ TypoScript Constants – magnificpopup
 
    Default
          EXT:jh\_magnificpopup/Resources/Public/js/jquery.magnific-
-         popup.min.jsr
-
-
-.. container:: table-row
-
-   Property
-         includeMagnificpopupCss
-
-   Data type
-         string
-
-   Description
-         Path to the Magnific Popup css file. Leave empty to include no css.
-
-   Default
-         EXT:jh\_magnificpopup/Resources/Public/css/magnific-popup.css
+         popup.min.js
 
 
 .. container:: table-row
@@ -99,16 +84,31 @@ TypoScript Constants – magnificpopup
 .. container:: table-row
 
    Property
-         gallery
+         includeMagnificpopupCss
 
    Data type
-         array
+         string
 
    Description
-         Options of gallery-view
+         Path to the Magnific Popup css file. Leave empty to include no css.
 
    Default
-         \
+         EXT:jh\_magnificpopup/Resources/Public/css/magnific-popup.css
+
+
+.. container:: table-row
+
+   Property
+         useEidForAjaxMethod
+
+   Data type
+         boolean
+
+   Description
+         Since version 0.3.0: Activate to use eID for Magnific Popup type ajax instead of pageNum
+
+   Default
+         0
 
 
 .. container:: table-row
@@ -120,7 +120,7 @@ TypoScript Constants – magnificpopup
          array
 
    Description
-         Options of image
+         Options of image (see chapter "TypoScript Constants – magnificpopup.image")
 
    Default
          \
@@ -129,16 +129,31 @@ TypoScript Constants – magnificpopup
 .. container:: table-row
 
    Property
-         includejquerycore
+         support
 
    Data type
-         boolean
+         array
 
    Description
-         Activate to include jQuery
+         Options to enable support of other Extensions (see chapter "TypoScript Constants – magnificpopup.support")
 
    Default
-         0
+         \
+
+
+.. container:: table-row
+
+   Property
+         gallery
+
+   Data type
+         array
+
+   Description
+         Options of gallery-view (see chapter "TypoScript Constants – magnificpopup.gallery")
+
+   Default
+         \
 
 
 .. ###### END~OF~TABLE ######

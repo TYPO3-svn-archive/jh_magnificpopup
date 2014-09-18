@@ -19,12 +19,9 @@ What does it do?
 ^^^^^^^^^^^^^^^^
 
 This extension provides the responsive jQuery lightbox plugin Magnific
-Popup for images in content elements.
+Popup for images in content elements. Opening content like videos, other websites or inline/referenced content is supported within a plugin.
 
-The feature to open content like videos, other pages or
-inline/referenced content is implemented but actually only available
-in  **BETA** -state.  **So be careful when using this in a productive
-environment!**
+To make the extension more flexible one hook is available, but more hooks will be added soon.
 
 For more information and some working examples of Magnific Popup visit
 `http://dimsemenov.com/plugins/magnific-popup/

@@ -28,6 +28,19 @@ ChangeLog
          Changes
 
  - :Version:
+         0.3.0
+
+   :Changes:
+         \* Added TypoScript to use global Magnific Popup type ajax
+
+         \* Added eID for Magnific Popup type ajax
+
+         \* Moved default selector for images from fluidtemplate to typoscript
+
+         \* Added instruction to use Magnific Popup for whole page (Support #61002)
+
+
+ - :Version:
          0.2.8
 
    :Changes:
