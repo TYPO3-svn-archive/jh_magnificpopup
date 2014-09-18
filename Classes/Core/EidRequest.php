@@ -101,12 +101,13 @@ class EidRequest {
 				         }
 				      }
 				   }
+				   if (isset($cObjConfig['matchedType']) && $cObjConfig['matchedType'] === FALSE) $cObjConfig = NULL;
 				}
 		}
 		if (!empty($cObjConfig) && is_array($cObjConfig)) {
 			$this->typoScriptFrontendController->content = $cObject->getContentObject($cObjConfig['name'])->render($cObjConfig['conf']);
 		} else {
-			$this->typoScriptFrontendController->content = 'ERROR';
+			$this->typoScriptFrontendController->content = 'ERROR - no (or wrong) configuration';
 		}
 
 		if ($GLOBALS['TSFE']->isINTincScript()) {
