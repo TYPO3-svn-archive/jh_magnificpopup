@@ -1,9 +1,7 @@
 <?php
 namespace Heilmann\JhMagnificpopup\Core;
 
-//https://github.com/helhum/ajax_example/blob/master/Classes/Core/EidRequestBootstrap.php
-
-use \TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Core\Bootstrap;
 use TYPO3\CMS\Extbase\Service\TypoScriptService;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
@@ -35,18 +33,6 @@ class EidRequest {
 		//http://lists.typo3.org/pipermail/typo3-german/2011-July/079128.html
 		switch ($gp['type']) {
 			case 'inline':
-				/*$ttContentConfig = array(
-						'table' 	=>	'tt_content',
-						'select.'	=> array(
-							'where'		=> 'tx_jhmagnificpopup_irre_parentid='.$gp['irre_parrentid'],
-							'pidInList'	=> GeneralUtility::_GP('id'),
-							'languageField'	=> 'sys_language_uid',
-							'orderBy'	=> 'sorting',
-						),
-						'wrap'	=> '<div class="white-popup-block">|</div>',
-						'renderObj'	=> $GLOBALS['TSFE']->tmpl->setup['tt_content'],
-						'renderObj.'	=> $GLOBALS['TSFE']->tmpl->setup['tt_content.'],
-				);*/
 				$cObjConfig = array(
 					'name'	=>	'CONTENT',
 					'conf'	=> array(
@@ -64,18 +50,6 @@ class EidRequest {
 				);
 				break;
 			case 'reference':
-				/*$ttContentConfig = array(
-						'table' 	=>	'tt_content',
-						'select.'	=> array(
-							'uidInList'		=> $gp['uid'],
-							'pidInList'	=> $gp['pid'],
-							'orderBy'	=> 'sorting',
-							'languageField'	=> 'sys_language_uid',
-						),
-						'wrap'	=> '<div class="white-popup-block">|</div>',
-						'renderObj'	=> $GLOBALS['TSFE']->tmpl->setup['tt_content'],
-						'renderObj.'	=> $GLOBALS['TSFE']->tmpl->setup['tt_content.'],
-				);*/
 				$cObjConfig = array(
 					'name'	=>	'CONTENT',
 					'conf'	=> array(
@@ -93,9 +67,12 @@ class EidRequest {
 				);
 				break;
 			default:
-				//http://typo3blogger.de/alles-uber-hooks/
 				if ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['jh_magnificpopup']['EidTypeHook']) {
-				   $params = array('type' => $gp['type']);
+				   if (!isset($gp['hookConf'])) $gp['hookConf'] = '';
+				   $params = array(
+				   	'type' => $gp['type'],
+				   	'hookConf' => $gp['hookConf']
+				   );
 				   foreach($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['jh_magnificpopup']['EidTypeHook'] as $_funcRef) {
 				      if ($_funcRef) {
 				         $cObjConfig = GeneralUtility::callUserFunction($_funcRef, $params, $this);
@@ -107,7 +84,6 @@ class EidRequest {
 				}
 		}
 		if (!empty($cObjConfig) && is_array($cObjConfig)) {
-			//$this->typoScriptFrontendController->content = $cObject->CONTENT($ttContentConfig);
 			$this->typoScriptFrontendController->content = $cObject->getContentObject($cObjConfig['name'])->render($cObjConfig['conf']);
 		} else {
 			$this->typoScriptFrontendController->content = 'ERROR';
