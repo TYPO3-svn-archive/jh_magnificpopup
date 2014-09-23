@@ -1,5 +1,3 @@
-
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
@@ -18,6 +16,10 @@
 Development
 -----------
 
+An Extension to demonstrate the usage of the hooks is available in TER (Extension-key jh_magnificpopup_hookexamples)
+
+Available hooks
+^^^^^^^^^^^^^^^
 
 .. toctree::
    :maxdepth: 5

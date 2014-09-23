@@ -20,14 +20,58 @@ Ajax Hook
 
 Use this hook if you want to add your own type to be opend as ajax lightbox.
 
+Required and available link-parameters:
+
+
+.. t3-field-list-table::
+ :header-rows: 1
+
+ - :Param:
+         Param
+
+   :Value:
+         Value
+
+   :Description:
+         Description
+
+ - :Param:
+         eID
+
+   :Value:
+         jh_magnificpopup_ajax
+
+   :Description:
+         Required - do not touch this
+
+ - :Param:
+         jh_magnificpopup[type]
+
+   :Value:
+         \
+
+   :Description:
+         Required: The type your hook is build for.
+
+ - :Param:
+      jh_magnificpopup[hookConf]
+
+   :Value:
+         \
+
+   :Description:
+         Optional: A string or array for your own configurations
+
+
+
 Include and register your class like this in your ext_localconf.php:
 
 .. code-block:: php
 
-	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['jh_magnificpopup']['EidTypeHook'][] = 'EXT:mx_extension_key/Classes/Hooks/JhMagnificpopupHook.php:Vendor\ExtensionName\Hooks\JhMagnificpopupHook->ajax';
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['jh_magnificpopup']['EidTypeHook'][] = 'EXT:mx_extension_key/Classes/Hooks/EidTypeHook.php:Vendor\ExtensionName\Hooks\EidTypeHook->ajax';
 
 
-The function (ajax in example above) should return a result structured like this:
+The function should return a result structured like this:
 
 .. code-block:: php
 
@@ -63,7 +107,10 @@ Hook:
 
 .. code-block:: php
 
-  class JhMagnificpopupHook {
+  /**
+   * EidTypeHook
+   */
+  class EidTypeHook {
 
       /**
        *
@@ -90,4 +137,4 @@ Hook:
 
 This will return a lighbox with content-text: "This is an easy example. Passed hookConf: aString"
 
-**An Extension to demonstrate the usage of the hook will be available soon in TER (Extension-key jh_magnificpopup_hookexamples)**
+For a working demonstration please see EXT:jh_magnificpopup_hookexamples and appropriated documentation.

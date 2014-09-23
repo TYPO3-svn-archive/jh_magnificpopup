@@ -28,6 +28,13 @@ ChangeLog
          Changes
 
  - :Version:
+         0.3.1
+
+   :Changes:
+         \* Improved documentation
+
+
+ - :Version:
          0.3.0
 
    :Changes:

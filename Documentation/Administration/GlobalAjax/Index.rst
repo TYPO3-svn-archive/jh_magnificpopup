@@ -47,7 +47,7 @@ To open content by ajax in a lightbox the link requires the following additional
          jh_magnificpopup_ajax
 
    :Description:
-         required - do not touch this
+         Required - do not touch this
 
  - :Param:
          jh_magnificpopup[type]
