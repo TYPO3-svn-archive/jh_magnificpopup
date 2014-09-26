@@ -33,6 +33,8 @@ ChangeLog
    :Changes:
          \* Improved documentation
 
+         \* Improved Ajax Hook
+
 
  - :Version:
          0.3.0
