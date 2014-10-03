@@ -10,7 +10,6 @@ page.includeCSS {
 
 # Add JavaScript files to page
 page.includeJSFooterlibs {
-#page.includeJS {
   tx_jhmagnificpopup10 = EXT:jh_magnificpopup/Resources/Public/js/jquery-1.10.2.min.js
   tx_jhmagnificpopup10.forceOnTop = 1
   tx_jhmagnificpopup10.if.isTrue = {$plugin.tx_jhmagnificpopup.includejquerycore}
