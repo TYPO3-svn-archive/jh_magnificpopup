@@ -99,13 +99,28 @@ TypoScript Constants – magnificpopup
 .. container:: table-row
 
    Property
-         useEidForAjaxMethod
+         mainClass
 
    Data type
-         boolean
+         string
 
    Description
-         Since version 0.3.0: Activate to use eID for Magnific Popup type ajax instead of pageNum
+         Since version 0.4.0: mainClass used for animation effects of images
+
+   Default
+         \
+
+
+.. container:: table-row
+
+   Property
+         removalDelay
+
+   Data type
+         int+
+
+   Description
+         Since version 0.4.0: removalDelay used for animation effects of images
 
    Default
          0
@@ -114,9 +129,10 @@ TypoScript Constants – magnificpopup
 .. container:: table-row
 
    Property
-         image
+         support
 
    Data type
+         arpe
          array
 
    Description

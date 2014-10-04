@@ -27,3 +27,4 @@ Available hooks
    :glob:
 
    AjaxHook/Index
+   AnimationEffectsHook/Index

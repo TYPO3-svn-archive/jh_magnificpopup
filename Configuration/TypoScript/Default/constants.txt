@@ -44,6 +44,12 @@ plugin.tx_jhmagnificpopup.magnificpopup.support.user =
 
 #customsubcategory=magnificpopup_imagesetup=LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xlf:constants.subcat.magnificpopup.imagesetup
 
+# cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesetup/100; type=string; label=mainClass: mainClass used for animation effects
+plugin.tx_jhmagnificpopup.magnificpopup.mainClass =
+
+# cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesetup/105; type=int+; label=removalDelay: removalDelay used for animation effects
+plugin.tx_jhmagnificpopup.magnificpopup.removalDelay = 0
+
 # cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesetup/110; type=boolean; label=Enable gallery: Enable gallery-view of Magnific Popup
 plugin.tx_jhmagnificpopup.magnificpopup.gallery.enabled = 1
 
@@ -55,6 +61,7 @@ plugin.tx_jhmagnificpopup.magnificpopup.gallery.preload.after = 2
 
 # cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesetup/140; type=boolean; label=navigateByImgClick:Enable 'navigate by image click'
 plugin.tx_jhmagnificpopup.magnificpopup.gallery.navigateByImgClick = 1
+
 
 # cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesetup/210; type=string; label=Cursor:Set to 'null' to disable zoom out cursor.
 plugin.tx_jhmagnificpopup.magnificpopup.image.cursor = mfp-zoom-out-cur

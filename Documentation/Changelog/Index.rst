@@ -28,9 +28,11 @@ ChangeLog
          Changes
 
  - :Version:
-         0.3.2
+         0.4.0
 
    :Changes:
+         \* Added option to easy use animation effects for Magnific Popup (please see chapter Developer->Animation Effects Hook)
+
          \* Updated category of constants to naming conventions
 
          \* Fixed paths to Templates, Partials and Layouts

@@ -65,6 +65,18 @@ plugin.tx_jhmagnificpopup {
 			}
 			templateVariables = COA
 			templateVariables {
+				mainClass = COA
+				mainClass {
+					#default selector
+					1 = TEXT
+					1.value = mfp-img-mobile
+					# user defined selector
+					10 = TEXT
+					10.value = {$plugin.tx_jhmagnificpopup.magnificpopup.mainClass}
+					10.noTrimWrap= | ||
+					10.insertData = 1
+					10.if.isTrue = {$plugin.tx_jhmagnificpopup.magnificpopup.mainClass}
+				}
 				galleryEnabled = TEXT
 				galleryEnabled.value = {$plugin.tx_jhmagnificpopup.magnificpopup.gallery.enabled}
 				galleryPreload = TEXT
@@ -77,6 +89,8 @@ plugin.tx_jhmagnificpopup {
 				imageVerticalGap.value = {$plugin.tx_jhmagnificpopup.magnificpopup.image.verticalGap}
 				imageVerticalFit = TEXT
 				imageVerticalFit.value = {$plugin.tx_jhmagnificpopup.magnificpopup.image.verticalFit}
+				removalDelay = TEXT
+				removalDelay.value = {$plugin.tx_jhmagnificpopup.magnificpopup.removalDelay}
 			}
 		}
 	}
@@ -89,18 +103,6 @@ plugin.tx_jhmagnificpopup {
 			file = EXT:jh_magnificpopup/Resources/Private/Templates/TypoScript/Default.html
 			variables {
 				selector < plugin.tx_jhmagnificpopup.settings.magnificpopup.selector
-				galleryEnabled = TEXT
-				galleryEnabled.value = {$plugin.tx_jhmagnificpopup.magnificpopup.gallery.enabled}
-				galleryPreload = TEXT
-				galleryPreload.value = [{$plugin.tx_jhmagnificpopup.magnificpopup.gallery.preload.before},{$plugin.tx_jhmagnificpopup.magnificpopup.gallery.preload.after}]
-				galleryNavigateByImgClick = TEXT
-				galleryNavigateByImgClick.value = {$plugin.tx_jhmagnificpopup.magnificpopup.gallery.navigateByImgClick}
-				imageCursor = TEXT
-				imageCursor.value = {$plugin.tx_jhmagnificpopup.magnificpopup.image.cursor}
-				imageVerticalGap = TEXT
-				imageVerticalGap.value = {$plugin.tx_jhmagnificpopup.magnificpopup.image.verticalGap}
-				imageVerticalFit = TEXT
-				imageVerticalFit.value = {$plugin.tx_jhmagnificpopup.magnificpopup.image.verticalFit}
 			}
 		}
 	}

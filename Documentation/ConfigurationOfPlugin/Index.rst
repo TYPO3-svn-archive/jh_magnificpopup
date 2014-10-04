@@ -27,6 +27,7 @@ following constants are available:
    :titlesonly:
    :glob:
 
+   TyposcriptConstantsMagnificpopup/Index
    TyposcriptConstantsMagnificpopuptypeiframe/Index
    TyposcriptConstantsMagnificpopuptypeinline/Index
    TyposcriptConstantsMagnificpopuptypeajax/Index
