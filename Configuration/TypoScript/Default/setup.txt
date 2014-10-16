@@ -2,6 +2,21 @@
 // Setup for image-lightbox
 //
 
+plugin.tx_jhmagnificpopup {
+	view {
+		templateRootPath = {$plugin.tx_jhmagnificpopup.view.templateRootPath}
+		partialRootPath = {$plugin.tx_jhmagnificpopup.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_jhmagnificpopup.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_jhmagnificpopup.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
 # Add css files to page
 page.includeCSS {
   tx_jhmagnificpopup10 = {$plugin.tx_jhmagnificpopup.includeMagnificpopupCss}
