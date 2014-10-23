@@ -147,6 +147,7 @@ class EidRequest {
 		$this->typoScriptFrontendController->fe_user = $feUserObj;
 		$this->typoScriptFrontendController->id = $pageId;
 		$this->typoScriptFrontendController->determineId();
+		$this->typoScriptFrontendController->checkAlternativeIdMethods();
 		$this->typoScriptFrontendController->getCompressedTCarray();
 		$this->typoScriptFrontendController->initTemplate();
 		$this->typoScriptFrontendController->getConfigArray();
