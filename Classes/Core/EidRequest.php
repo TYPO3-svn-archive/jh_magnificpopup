@@ -70,13 +70,14 @@ class EidRequest {
 				);
 				break;
 			case 'reference':
+				$pid = (isset($gp['pid']) && !empty($gp['pid']) ? $gp['pid'] : $GLOBALS["TSFE"]->id);
 				$cObjConfig = array(
 					'name'	=>	'CONTENT',
 					'conf'	=> array(
 							'table' 	=>	'tt_content',
 							'select.'	=> array(
 								'uidInList'		=> $gp['uid'],
-								'pidInList'	=> $gp['pid'],
+								'pidInList'	=> $pid,
 								'orderBy'	=> 'sorting',
 								'languageField'	=> 'sys_language_uid',
 							),
