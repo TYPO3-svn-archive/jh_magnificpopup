@@ -49,4 +49,26 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['proc
 // Add eID for ajax-content
 $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['jh_magnificpopup_ajax'] = 'EXT:'.$_EXTKEY.'/Resources/Public/Php/EidRunner.php';
 
+//
+// alpha-features::
+//
+$extConfig = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['jh_magnificpopup']);
+if (isset($extConfig['enableAlphaFeatures']) && $extConfig['enableAlphaFeatures'] == 1) {
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+		RTE.classesAnchor {
+		  internalCEInMagnificpopup {
+		    class = mfp-content-element internal-link-new-window
+		    type = page
+		    image >
+		    titleText = LLL:EXT:jh_magnificpopup/Resources/Private/Language/locallang.xml:pageTSconfig.internalCEInMagnificpopup
+		  }
+		}
+
+		RTE.default.proc.allowedClasses := addToList(mfp-content-element internal-link-new-window)
+		RTE.default.classesAnchor := addToList(mfp-content-element internal-link-new-window)
+
+		RTE.default.buttons.link.properties.class.allowedClasses := addToList(mfp-content-element internal-link-new-window)
+	');
+}
+
 ?>
