@@ -33,9 +33,15 @@ ChangeLog
    :Changes:
          \* Added option to easy use animation effects for Magnific Popup (please see chapter Developer->Animation Effects Hook)
 
+ - :Version:
+         0.3.2
+
+   :Changes:
          \* Updated category of constants to naming conventions
 
          \* Fixed paths to Templates, Partials and Layouts
+
+         \* Fixed bug #62716 (missing semicolon at the end of *.min.js files)
 
  - :Version:
          0.3.1
