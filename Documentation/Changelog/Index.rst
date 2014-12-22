@@ -33,6 +33,12 @@ ChangeLog
    :Changes:
          \* Added option to easy use animation effects for Magnific Popup (please see chapter Developer->Animation Effects Hook)
 
+         \* Added Signal for showAction
+
+         \* [BREAKING CHANGE] Moved JavaScript from controller to template
+
+         \* [ALPHA] Link to CE and load by ajax for RTE
+
  - :Version:
          0.3.2
 
