@@ -52,7 +52,7 @@ class MagnificpopupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
 	 * @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher
 	 * @inject
 	 */
-	protected $signalSlotDispatcher
+	protected $signalSlotDispatcher;
 
 	/**
 	 * action show
