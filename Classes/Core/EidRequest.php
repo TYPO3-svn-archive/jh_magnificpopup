@@ -59,7 +59,7 @@ class EidRequest {
 							'table' 	=>	'tt_content',
 							'select.'	=> array(
 								'where'		=> 'tx_jhmagnificpopup_irre_parentid='.$gp['irre_parrentid'],
-								'pidInList'	=> GeneralUtility::_GP('id'),
+								'pidInList'	=> (GeneralUtility::_GP('id')?:$GLOBALS["TSFE"]->id),
 								'languageField'	=> 'sys_language_uid',
 								'orderBy'	=> 'sorting',
 							),

@@ -23,6 +23,17 @@
 		fixedBgPos: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.templateVariablesAjax.fixedBgPos" />',
 		overflowY: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.templateVariablesAjax.overflowY" />',
 		removalDelay: <f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.templateVariablesAjax.removalDelay" />,
-		closeMarkup: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.templateVariablesAjax.closeMarkup" />'
+		closeMarkup: '<f:cObject typoscriptObjectPath="plugin.tx_jhmagnificpopup.settings.templateVariablesAjax.closeMarkup" />',
+		callbacks: {
+			ajaxContentAdded: function() {
+				//if (typeof responsiveimages == 'function') {
+					$("img.lazyload").responsiveimages({}, function() {
+						$(this).load(function() {
+							this.style.opacity = 1;
+						});
+					});
+				//}
+			}
+		}
 	});
 })(window.jQuery || window.Zepto);

@@ -37,6 +37,8 @@ ChangeLog
 
          \* Added support for RTE click-enlarge
 
+         \* Added support for image lazyload for EXT:bootstrap_package when loading content by ajax
+
          \* [BREAKING CHANGE] Moved JavaScript from controller to template
 
          \* [ALPHA] Link to CE and load by ajax for RTE

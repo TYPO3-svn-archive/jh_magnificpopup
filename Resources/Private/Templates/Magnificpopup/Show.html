@@ -34,6 +34,17 @@
 				overflowY: '{settings.type.ajax.overflowY}',
 				removalDelay: {settings.type.ajax.removalDelay},
 				closeMarkup: '{f:format.raw(value:settings.type.ajax.closeMarkup)}',
+				callbacks: {
+					ajaxContentAdded: function() {
+						//if (typeof responsiveimages == 'function') {
+							$("img.lazyload").responsiveimages({}, function() {
+								$(this).load(function() {
+									this.style.opacity = 1;
+								});
+							});
+						//}
+					}
+				}
 			});
 		});
 	</f:if>
