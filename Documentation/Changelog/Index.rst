@@ -35,6 +35,8 @@ ChangeLog
 
          \* Added Signal for showAction
 
+         \* Added support for RTE click-enlarge
+
          \* [BREAKING CHANGE] Moved JavaScript from controller to template
 
          \* [ALPHA] Link to CE and load by ajax for RTE
