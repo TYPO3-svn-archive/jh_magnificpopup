@@ -39,7 +39,7 @@ plugin.tx_jhmagnificpopup.magnificpopup.support.tx_ttnews.latest = 0
 # cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesupport/050; type=boolean; label=EXT bootstrap_package:Enable support for bootstrap_package
 plugin.tx_jhmagnificpopup.magnificpopup.support.tx_bootstrappackage = 1
 
-# cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesupport/099; type=string; label=User-defined:jQuery selector for user-defined classes
+# cat=plugin.tx_jhmagnificpopup/magnificpopup_imagesupport/090; type=string; label=User-defined:jQuery selector for user-defined classes
 plugin.tx_jhmagnificpopup.magnificpopup.support.user =
 
 
