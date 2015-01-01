@@ -73,6 +73,17 @@
 				overflowY: '{settings.type.inline.overflowY}',
 				removalDelay: {settings.type.inline.removalDelay},
 				closeMarkup: '{f:format.raw(value:settings.type.inline.closeMarkup)}',
+				callbacks: {
+					open: function() {
+						//if (typeof responsiveimages == 'function') {
+							$("img.lazyload").responsiveimages({}, function() {
+								$(this).load(function() {
+									this.style.opacity = 1;
+								});
+							});
+						//}
+					}
+				}
 			});
 		});
 	</f:if>
